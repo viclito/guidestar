@@ -250,6 +250,9 @@
                     margin: 0.5rem 0;
                 }
             }
+            .feature-box{
+                justify-content: start;
+            }
 
             .bg-gradient-custom {
                 background: #4472C4;
@@ -471,17 +474,17 @@
         <!-- end header -->
         <!-- start hero section -->
         <section class="firstsection p-0 parallax mobile-height" data-parallax-background-ratio="0.5" 
-        style="background-image: url('https://images.unsplash.com/photo-1589859762194-eaae75c61f64'); position: relative;"
+        style="background-color: white; position: relative;"
         >
             <!-- https://helplocal.in/blog/wp-content/uploads/2023/02/claudio-schwarz-k39RGHmLoV8-unsplash.jpg -->
-            <div class="overlay"></div>
+            <!-- <div class="overlay"></div> -->
                 <div class="content">
                     <div class="container position-relative">
                         <div class="row">
                             <div class="col-lg-10 col-md-10 col-sm-11 full-screen md-h-650px sm-h-450px d-flex flex-column justify-content-center wow animate__fadeIn">
                                 <!-- <span class="text-extra-medium alt-font font-weight-500 text-uppercase text-olivine-green d-block margin-35px-bottom xs-margin-15px-bottom">Financial planning</span> -->
-                                <h2 class="alt-font font-weight-700 text-dark-charcoal text-uppercase margin-2-half-rem-bottom letter-spacing-minus-2px sm-margin-20px-bottom xs-margin-15px-bottom" style="color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);font-size: 3.2rem;">Look up Not-for-Profit Organisations and access information you need to give with confidence!</h2>
-                                <p class="text-extra-medium line-height-30px w-75 margin-3-rem-bottom lg-w-90 md-w-100 xs-margin-15px-bottom " style="color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Use GuideStar to look up a nonprofit and access the most complete data available.</p>
+                                <h2 class="alt-font font-weight-700 text-dark-charcoal text-uppercase margin-2-half-rem-bottom letter-spacing-minus-2px sm-margin-20px-bottom xs-margin-15px-bottom" style="color: black; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);font-size: 3.2rem;">Look up Not-for-Profit Organisations and access information you need to give with confidence!</h2>
+                                <p class="text-extra-medium line-height-30px w-75 margin-3-rem-bottom lg-w-90 md-w-100 xs-margin-15px-bottom " style="color: black; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Use GuideStar to look up a nonprofit and access the most complete data available.</p>
                                 <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
                                     <div class="search-container">
                                         <input type="text" class="search-input" placeholder="Search...">
@@ -499,103 +502,91 @@
                 </div>
         </section>
         <!-- end hero section -->
+
         
+
         <!-- start section -->
-        <section id="about" class="big-section wow animate__fadeIn " style="padding: 100px 0;">
+        <section class="bg-light-gray overflow-visible wow animate__fadeIn">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-12 text-center text-lg-start md-margin-6-rem-bottom wow animate__fadeIn">
-                        <h5 class="alt-font text-center text-dark-charcoal font-weight-700 letter-spacing-minus-1px " style="margin-bottom: 60px;">
+                        <h5 class="alt-font text-center text-dark-charcoal font-weight-700 letter-spacing-minus-1px " style="margin-bottom: 60px; position: relative; z-index: 10;">
                             Premier Destination For NPOs and NPO Research!
                         </h5>
                     </div>
                 </div>
-                
-                <div class="row " style="color: black; ">
-                    <!-- start services item -->
-                    <div class="col-lg-3 col-md-4 sm-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
-                        <div class="services-box-style-01  box-shadow-large" >
-                            <div class="imagex-box position-relative overflow-hidden">
-                                <img src="assets/file.png" alt="" style="height: 180px;width: 100%; padding: 30px 80px; background-color: white;" />
-                                <div class="services-box-hover align-items-center justify-content-center d-flex">
-                                    <div class="services-icon">
-                                        <a href="our-story.html" class="rounded-circle bg-white"><i class="fa-solid fa-arrow-right text-dark-charcoal"></i></a>
-                                    </div>
+                <div class="z-index-6  margin-8-rem-bottom sm-margin-7-rem-bottom">
+                    <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 justify-content-center">
+                        <!-- start feature box item -->
+                        <div class="col-sm-8 md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn">
+                            <div class="feature-box text-start h-100 feature-box-dark-hover box-shadow-small border-radius-5px bg-white overflow-hidden padding-4-rem-all">
+                                <div class="feature-box-icon">
+                                    <img src="assets/file.png" alt=""  style="height: 85px; padding-bottom: 40px;"/>                                
                                 </div>
-                            </div>
-                            <div class="position-relative bg-white last-paragraph-no-margin " style="padding: 20px;">
-                                <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-5px-bottom" >
-                                    Attract donors with your NPO profile
-                                </span>
-                                <p>Claim and update your organisation’s NPO/ NGO profile. Earn a Seal of Transparency to give donors the information and confidence they need to support you. (Good news: No cost for Basic Level.)</p>
-                                <div class="w-100 h-4px bg-olivine-green position-absolute left-0px bottom-0px d-block" style="background-color: #004878;"></div>
+                                <div class="feature-box-content">
+                                    <span class="alt-font font-weight-500 margin-10px-bottom d-block text-extra-dark-gray text-extra-medium">Attract donors with your NPO profile</span>
+                                    <p>Claim and update your organisation’s NPO/ NGO profile. Earn a Seal of Transparency to give donors the information and confidence they need to support you. (Good news: No cost for Basic Level.)</p>
+                                    <a href="our-story.html" class="btn btn-extra-large btn-link text-extra-dark-gray">Read more</a>
+                                </div>
+                                <div class="feature-box-overlay bg-fast-blue"></div>
                             </div>
                         </div>
-                    </div>
-                    <!-- end services item -->
-                    <!-- start services item -->
-                    <div class="col-lg-3 col-md-4 sm-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
-                        <div class="services-box-style-01  box-shadow-large" >
-                            <div class="imagex-box position-relative overflow-hidden">
-                                <img src="assets/search.png" alt="" style="height: 180px;width: 100%; padding: 30px 80px;background-color: white;" />
-                                <div class="services-box-hover align-items-center justify-content-center d-flex">
-                                    <div class="services-icon">
-                                        <a href="our-story.html" class="rounded-circle bg-white"><i class="fa-solid fa-arrow-right text-dark-charcoal"></i></a>
-                                    </div>
+                        <!-- end feature box item -->
+                        <!-- start feature box item -->
+                        <div class="col-sm-8 md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
+                            <div class="feature-box text-start h-100 feature-box-dark-hover box-shadow-small border-radius-5px bg-white overflow-hidden padding-4-rem-all">
+                                <div class="feature-box-icon">
+                                    <img src="assets/search.png" alt=""  style="height: 85px; padding-bottom: 40px;"/>                                
                                 </div>
-                            </div>
-                            <div class="position-relative bg-white last-paragraph-no-margin " style="padding: 20px;">
-                                <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-5px-bottom">
-                                    Identify credible NPO partners
-                                </span>
-                                <p style="padding-bottom: 90px;">Efficiently find organisations that will meet your goals and gain more valuable partnerships with GuideStar India’s Solutions. </p>
-                                <div class="w-100 h-4px bg-olivine-green position-absolute left-0px bottom-0px d-block" style="background-color: #004878;"></div>
+                                <div class="feature-box-content">
+                                    <span class="alt-font font-weight-500 margin-10px-bottom d-block text-extra-dark-gray text-extra-medium">Identify credible NPO partners</span>
+                                    <p>Efficiently find organisations that will meet your goals and gain more valuable partnerships with GuideStar India’s Solutions <br><br>.</p>
+                                    <a href="our-story.html" class="btn btn-extra-large btn-link text-extra-dark-gray">Read more</a>
+                                </div>
+                                <div class="feature-box-overlay bg-fast-blue"></div>
                             </div>
                         </div>
-                    </div>
-                    <!-- end services item -->
-                    <!-- start services item -->
-                    <div class="col-lg-3 col-md-4 sm-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.4s">
-                        <div class="services-box-style-01 box-shadow-large" >
-                            <div class="imagex-box position-relative overflow-hidden">
-                                <img src="assets/presentation.png" alt="" style="height: 180px;width: 100%; padding: 30px 80px;background-color: white;" />
-                                <div class="services-box-hover align-items-center justify-content-center d-flex">
-                                    <div class="services-icon">
-                                        <a href="our-story.html" class="rounded-circle bg-white"><i class="fa-solid fa-arrow-right text-dark-charcoal"></i></a>
-                                    </div>
+                        <!-- end feature box item -->
+                        <!-- start feature box item -->
+                        <div class="col-sm-8 wow animate__fadeIn" data-wow-delay="0.4s">
+                            <div class="feature-box text-start h-100 feature-box-dark-hover box-shadow-small border-radius-5px bg-white overflow-hidden padding-4-rem-all">
+                                <div class="feature-box-icon">
+                                    <img src="assets/presentation.png" alt=""  style="height: 85px; padding-bottom: 40px;"/>                                
                                 </div>
-                            </div>
-                            <div class="position-relative bg-white last-paragraph-no-margin " style="padding: 20px;">
-                                <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-5px-bottom">
-                                    Support Capacity Building and Due Diligence for NPOs
-                                </span>
-                                <p style="padding-bottom: 90px;">Educate and equip NPOs to build trust and transparency through a comprehensive framework. <br> .</p>
-                                <div class="w-100 h-4px position-absolute left-0px bottom-0px d-block" style="background-color: #004878;"></div>
+                                <div class="feature-box-content">
+                                    <span class="alt-font font-weight-500 margin-10px-bottom d-block text-extra-dark-gray text-extra-medium">Support Capacity Building and Due Diligence for NPOs</span>
+                                    <p>Educate and equip NPOs to build trust and transparency through a comprehensive framework <br><br><br>. </p>
+                                    <a href="our-story.html" class="btn btn-extra-large btn-link text-extra-dark-gray">Read more</a>
+                                </div>
+                                <div class="feature-box-overlay bg-fast-blue"></div>
                             </div>
                         </div>
-                    </div>
-                    <!-- end services item -->
-                    <!-- start services item -->
-                    <div class="col-lg-3 col-md-4 sm-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.4s">
-                        <div class="services-box-style-01 box-shadow-large" >
-                            <div class="imagex-box position-relative overflow-hidden">
-                                <img src="assets/signal.png" alt="" style="height: 180px;width: 100%; padding: 30px 80px;background-color: white;" />
-                                <div class="services-box-hover align-items-center justify-content-center d-flex">
-                                    <div class="services-icon">
-                                        <a href="our-story.html" class="rounded-circle bg-white"><i class="fa-solid fa-arrow-right text-dark-charcoal"></i></a>
-                                    </div>
+                        <!-- end feature box item -->
+                        <!-- start feature box item -->
+                        <div class="col-sm-8 wow animate__fadeIn" data-wow-delay="0.4s">
+                            <div class="feature-box text-start h-100 feature-box-dark-hover box-shadow-small border-radius-5px bg-white overflow-hidden padding-4-rem-all">
+                                <div class="feature-box-icon">
+                                    <img src="assets/signal.png" alt=""  style="height: 85px; padding-bottom: 40px;"/>                                
                                 </div>
-                            </div>
-                            <div class="position-relative bg-white last-paragraph-no-margin " style="padding: 20px;">
-                                <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-5px-bottom">
-                                    Access API solutions for your programmes
-                                </span>
-                                <p style="padding-bottom: 90px;">Power your platforms with GuideStar India’s APIs to support your organisational needs. <br>.</p>
-                                <div class="w-100 h-4px position-absolute left-0px bottom-0px d-block" style="background-color: #004878;"></div>
+                                <div class="feature-box-content">
+                                    <span class="alt-font font-weight-500 margin-10px-bottom d-block text-extra-dark-gray text-extra-medium">Access API solutions for your programmes</span>
+                                    <p>Power your platforms with GuideStar India’s APIs to support your organisational needs <br><br><br><br><br>.</p>
+                                    <a href="our-story.html" class="btn btn-extra-large btn-link text-extra-dark-gray">Read more</a>
+                                </div>
+                                <div class="feature-box-overlay bg-fast-blue"></div>
                             </div>
                         </div>
+                        <!-- end feature box item -->
                     </div>
-                    <!-- end services item -->
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 offset-lg-1 d-flex flex-column flex-md-row align-items-center sm-margin-20px-bottom wow animate__fadeIn" style="font-family: sans-serif;" data-wow-delay="0.4s">
+                        <span class="w-30 h-1px bg-fast-blue margin-25px-right sm-w-90px sm-no-margin-right sm-margin-20px-bottom d-none d-md-inline-block"></span>
+                        <h2 class="vertical-counter d-inline-flex font-weight-600 letter-spacing-minus-1px text-extra-dark-gray md-letter-spacing-normal mb-0" data-to="12301"></h2>
+                    </div>
+                    <div class="col-lg-6 col-sm-8 text-center wow animate__fadeIn" data-wow-delay="0.4s">
+                        <h6 class="alt-font font-weight-500 text-extra-dark-gray text-center text-md-start d-inline-block w-90 mb-0 md-w-100">Registered Not- for profit organisations</h6>
+                    </div>
                 </div>
             </div>
         </section>
@@ -694,9 +685,8 @@
         <!-- end section -->
 
         <!-- start section -->
-        <section class="padding-100px-tb lg-padding-90px-tb md-padding-75px-tb wow animate__fadeIn" style="padding: 70px 0;">
+        <section class="big-section " style="padding: 70px 0;">
             <div class="container">
-                
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-12 text-center text-lg-start md-margin-6-rem-bottom wow animate__fadeIn">
                         <h5 class="alt-font text-center text-dark-charcoal font-weight-700 letter-spacing-minus-1px " style="margin-bottom: 60px;">
@@ -704,29 +694,33 @@
                         </h5>
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 align-items-center justify-content-center">
+                <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-md-3">
                     <!-- start counter item -->
-                    <div class="col text-center sm-margin-40px-bottom">
-                        <h4 class="vertical-counter d-inline-flex text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-2px md-letter-spacing-normal mb-0" data-to="12000"></h4>
-                        <span class="alt-font text-uppercase text-small d-block margin-5px-top">Discover</span>
+                    <div class="col counter-style-01 last-paragraph-no-margin md-margin-30px-bottom">
+                        <h5 class="counter counter-number text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-1px margin-15px-bottom" data-to="12000" data-speed="3000"></h5>
+                        <span class="alt-font font-weight-500 text-extra-dark-gray d-block margin-5px-bottom">Discover</span>
+                        <!-- <p class="w-85 md-w-100">Lorem ipsum is simply dummy text the printing typesetting</p> -->
                     </div>
                     <!-- end counter item -->
                     <!-- start counter item -->
-                    <div class="col text-center sm-margin-40px-bottom">
-                        <h4 class="vertical-counter d-inline-flex text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-2px md-letter-spacing-normal mb-0" data-to="7000"></h4>
-                        <span class="alt-font text-uppercase text-small d-block margin-5px-top">Engage</span>
+                    <div class="col counter-style-01 last-paragraph-no-margin md-margin-30px-bottom">
+                        <h5 class="counter counter-number text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-1px margin-15px-bottom" data-to="7000" data-speed="3000"></h5>
+                        <span class="alt-font font-weight-500 text-extra-dark-gray d-block margin-5px-bottom">Engage</span>
+                        <!-- <p class="w-85 md-w-100">Lorem ipsum is simply dummy text the printing typesetting</p> -->
                     </div>
                     <!-- end counter item -->
                     <!-- start counter item -->
-                    <div class="col text-center xs-margin-40px-bottom">
-                        <h4 class="vertical-counter d-inline-flex text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-2px md-letter-spacing-normal mb-0" data-to="500"></h4>
-                        <span class="alt-font text-uppercase text-small d-block margin-5px-top">Support</span>
+                    <div class="col counter-style-01 last-paragraph-no-margin">
+                        <h5 class="counter counter-number text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-1px margin-15px-bottom" data-to="500" data-speed="3000"></h5>
+                        <span class="alt-font font-weight-500 text-extra-dark-gray d-block margin-5px-bottom">Support</span>
+                        <!-- <p class="w-85 md-w-100">Lorem ipsum is simply dummy text the printing typesetting</p> -->
                     </div>
                     <!-- end counter item -->
                     <!-- start counter item -->
-                    <div class="col text-center">
-                        <h4 class="vertical-counter d-inline-flex text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-2px md-letter-spacing-normal mb-0" data-to="200000"></h4>
-                        <span class="alt-font text-uppercase text-small d-block margin-5px-top">Elevate</span>
+                    <div class="col counter-style-01 last-paragraph-no-margin">
+                        <h5 class="counter counter-number text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-1px margin-15px-bottom" data-to="200000" data-speed="3000"></h5>
+                        <span class="alt-font font-weight-500 text-extra-dark-gray d-block margin-5px-bottom">Elevate</span>
+                        <!-- <p class="w-85 md-w-100">Lorem ipsum is simply dummy text the printing typesetting</p> -->
                     </div>
                     <!-- end counter item -->
                 </div>
@@ -813,11 +807,8 @@
 
 
 
-        
-
-
         <!-- start section -->
-        <section id="about" class="big-section wow animate__fadeIn" style="padding: 100px 0; ">
+        <section class="big-section wow animate__fadeIn">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-12 text-center text-lg-start md-margin-6-rem-bottom wow animate__fadeIn">
@@ -826,72 +817,52 @@
                         </h5>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <!-- start services item -->
-                    <div class="col-lg-3 col-md-4 sm-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
-                        <div class="services-box-style-01  box-shadow-large" >
-                            <div class="imagex-box position-relative overflow-hidden" style="background-color: white;">
-                                <img src="assets/npo1.png" alt="" style="height: 180px;width: 100%; padding: 30px 80px;" />
-                                <!-- <div class="services-box-hover align-items-center justify-content-center d-flex">
-                                    <div class="services-icon">
-                                        <a href="our-story.html" class="rounded-circle bg-white"><i class="fa-solid fa-arrow-right text-dark-charcoal"></i></a>
-                                    </div>
-                                </div> -->
-                            </div>
-                            <div class="position-relative bg-white last-paragraph-no-margin " style="padding: 20px;min-height: 130px;">
-                                <!-- <span class="alt-font font-weight-500 text-dark-charcoal text-uppercase d-block margin-5px-bottom">
-                                    Attract donors with your NPO profile
-                                </span> -->
-                                <p>Most NPOs are less than 30 years old, mirrors India’s NPO population.(n=12000)</p>
-                            </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center">
+                    <!-- start pie chart item -->
+                    <div class="col text-center md-margin-45px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
+                        <div class="chart-percent d-inline-block margin-40px-bottom xs-margin-20px-bottom">
+                            <span class="pie-chart-style-02" data-line-width="8" data-percent="100" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9">
+                                <img src="assets/npo1.png" alt="" style="height: 70px;width: auto; position: absolute;" />
+                            </span>
+                        </div>
+                        <div class="last-paragraph-no-margin wow animate__fadeIn" data-wow-duration="0.2">
+                            <!-- <span class="alt-font font-weight-500 margin-5px-bottom d-block text-extra-dark-gray">Innovative solutions</span> -->
+                            <p class="d-inline-block w-65 lg-w-90 md-w-75 sm-w-95 xs-w-75">Most NPOs are less than 30 years old, mirrors India’s NPO population.(n=12000)</p>
                         </div>
                     </div>
-                    <!-- end services item -->
-                    <!-- start services item -->
-                    <div class="col-lg-3 col-md-4 sm-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
-                        <div class="services-box-style-01  box-shadow-large" >
-                            <div class="imagex-box position-relative overflow-hidden" style="background-color: white;">
-                                <img src="assets/npo2.png" alt="" style="height: 180px;width: 100%; padding: 30px 80px;" />
-                                <!-- <div class="services-box-hover align-items-center justify-content-center d-flex">
-                                    <div class="services-icon">
-                                        <a href="our-story.html" class="rounded-circle bg-white"><i class="fa-solid fa-arrow-right text-dark-charcoal"></i></a>
-                                    </div>
-                                </div> -->
-                            </div>
-                            <div class="position-relative bg-white last-paragraph-no-margin " style="padding: 20px; min-height: 130px;">
-                                <!-- <span class="alt-font font-weight-500 text-dark-charcoal text-uppercase d-block margin-5px-bottom">
-                                    Identify credible NPO partners
-                                </span> -->
-                                <p >52% of NPOs have between 5 to 10 governing body members (n=1200) </p>
-                            </div>
+                    <!-- end pie chart item -->
+                    <!-- start pie chart item -->
+                    <div class="col text-center md-margin-45px-bottom wow animate__fadeIn" data-wow-delay="0.4s">
+                        <div class="chart-percent d-inline-block margin-40px-bottom xs-margin-20px-bottom">
+                            <span class="pie-chart-style-02" data-line-width="8" data-percent="100" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9">
+                                <img src="assets/npo2.png" alt="" style="height: 70px;width: auto; position: absolute;" />
+                            </span>
+                        </div>
+                        <div class="last-paragraph-no-margin">
+                            <!-- <span class="alt-font font-weight-500 margin-5px-bottom d-block text-extra-dark-gray">Marketing strategy</span> -->
+                            <p class="d-inline-block w-65 lg-w-100 md-w-75 sm-w-95 xs-w-75">52% of NPOs have between 5 to 10 governing body members (n=1200)</p>
                         </div>
                     </div>
-                    <!-- end services item -->
-                    <!-- start services item -->
-                    <div class="col-lg-3 col-md-4 sm-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.4s">
-                        <div class="services-box-style-01 box-shadow-large" >
-                            <div class="imagex-box position-relative overflow-hidden" style="background-color: white;">
-                                <img src="assets/npo3.png" alt="" style="height: 180px;width: 100%; padding: 30px 80px;" />
-                                <!-- <div class="services-box-hover align-items-center justify-content-center d-flex">
-                                    <div class="services-icon">
-                                        <a href="our-story.html" class="rounded-circle bg-white"><i class="fa-solid fa-arrow-right text-dark-charcoal"></i></a>
-                                    </div>
-                                </div> -->
-                            </div>
-                            <div class="position-relative bg-white last-paragraph-no-margin " style="padding: 20px; min-height: 130px;">
-                                <!-- <span class="alt-font font-weight-500 text-dark-charcoal text-uppercase d-block margin-5px-bottom">
-                                    Support Capacity Building and Due Diligence for NPOs
-                                </span> -->
-                                <p >The average number of full-time staff is 48.78 (n=4531)</p>
-                            </div>
+                    <!-- end pie chart item -->
+                    <!-- start pie chart item -->
+                    <div class="col text-center wow animate__fadeIn" data-wow-delay="0.4s">
+                        <div class="chart-percent d-inline-block margin-40px-bottom xs-margin-20px-bottom">
+                            <span class="pie-chart-style-02" data-line-width="8" data-percent="100" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9">
+                                <img src="assets/npo3.png" alt="" style="height: 70px;width: auto; position: absolute;" />
+                            </span>
+                        </div>
+                        <div class="last-paragraph-no-margin">
+                            <!-- <span class="alt-font font-weight-500 margin-5px-bottom d-block text-extra-dark-gray">Social Marketing</span> -->
+                            <p class="d-inline-block w-65 lg-w-100 md-w-75 sm-w-95 xs-w-75">The average number of full-time staff is 48.78 (n=4531)</p>
                         </div>
                     </div>
-                    <!-- end services item -->
-                    
+                    <!-- end pie chart item -->
                 </div>
             </div>
         </section>
         <!-- end section -->
+
+        
         
         <!-- start section -->
         <!-- <section class="cover-background xs-no-padding-tb xs-border-tb border-color-medium-gray" style="background-image:url('assets/secondimg.jpg');">
@@ -938,6 +909,55 @@
                 </div>
             </div>
         </section> -->
+        <!-- end section -->
+
+        <!-- start section -->
+        <section class="bg-light-gray wow animate__fadeIn" style="padding: 70px 0;">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-12 text-center text-lg-start md-margin-6-rem-bottom wow animate__fadeIn">
+                        <h5 class="alt-font text-center text-dark-charcoal font-weight-700 letter-spacing-minus-1px " style="margin-bottom: 60px;">
+                            Stories from the Ground
+                        </h5>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center">
+                    <!-- start services item -->
+                    <div class="col md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn">
+                        <img src="/assets/stories1.jpg" alt="" style="width: 100%;">
+                        <div class="bg-white box-shadow-small padding-3-rem-all">
+                            <!-- <span class="text-extra-dark-gray alt-font d-block font-weight-500 margin-10px-bottom">Professional liability</span> -->
+                            <p>Samerth Talim Kendra (STK) was initiated in 2007, as a response to demand by communities of Juhapura, Sarkhej and Vejalpur for a centre for intellectually challenged children.</p>
+                            <div class="h-1px bg-medium-light-gray margin-25px-bottom w-100"></div>
+                            <a class="text-small text-extra-dark-gray font-weight-500 text-uppercase alt-font d-block" href="what-we-offers.html">more info<i class="ti-arrow-right float-end"></i></a>
+                        </div>
+                    </div>
+                    <!-- end services item -->
+                    <!-- start services item -->
+                    <div class="col md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
+                        <img src="/assets/stories2.jpg" alt="" style="width: 100%;">
+                        <div class="bg-white box-shadow-small padding-3-rem-all">
+                            <!-- <span class="text-extra-dark-gray alt-font d-block font-weight-500 margin-10px-bottom">Dedicated to our clients</span> -->
+                            <p>ETASHA’s program is designed to assist underprivileged youth who have completed schooling and are being trained  to become employable in growth sectors of the economy.</p>
+                            <div class="h-1px bg-medium-light-gray margin-25px-bottom w-100"></div>
+                            <a class="text-small text-extra-dark-gray font-weight-500 text-uppercase alt-font d-block" href="what-we-offers.html">more info<i class="ti-arrow-right float-end"></i></a>
+                        </div>
+                    </div>
+                    <!-- end services item -->
+                    <!-- start services item -->
+                    <div class="col wow animate__fadeIn" data-wow-delay="0.4s">
+                        <img src="/assets/stories3.jpg" alt="" style="width: 100%;">
+                        <div class="bg-white box-shadow-small padding-3-rem-all">
+                            <!-- <span class="text-extra-dark-gray alt-font d-block font-weight-500 margin-10px-bottom">Outstanding services</span> -->
+                            <p>Thane CPCA conducted programs inviting students from kindergarten to sensitise them towards their approach to animals and how to take care of them <br>.</p>
+                            <div class="h-1px bg-medium-light-gray margin-25px-bottom w-100"></div>
+                            <a class="text-small text-extra-dark-gray font-weight-500 text-uppercase alt-font d-block" href="what-we-offers.html">more info<i class="ti-arrow-right float-end"></i></a>
+                        </div>
+                    </div>
+                    <!-- end services item -->
+                </div>
+            </div>
+        </section>
         <!-- end section -->
 
         <!-- start section --> 
