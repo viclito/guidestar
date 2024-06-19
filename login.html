@@ -1,0 +1,626 @@
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Guidestar India Momscode</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="ThemeZaa">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+        <meta name="description" content="Litho is a clean and modern design, BootStrap 5 responsive, business and portfolio multipurpose HTML5 template with 39+ ready homepage demos.">
+        <!-- favicon icon -->
+        <link rel="shortcut icon" href="assets/favicon.ico">
+        <!-- <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"> -->
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" type="text/css" href="css/font-icons.min.css">
+        <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+        <link rel="stylesheet" href="css/login.css">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <!-- Optional: Animate CSS for the wow.js animations -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+            body{
+                font-family: "Merriweather", serif;
+            }
+            .buton{
+                background-color: #ed1c24;
+                color: white;
+            }
+            .buton:hover{
+                background-color: white;
+                color: #ed1c24;
+            }
+            .search-container {
+                position: relative;
+                width: 300px;
+                margin-top: 4px;
+            }
+    
+            .search-input2 {
+                padding: 5px 40px 5px 15px;
+                border: 2px solid #CCC;
+                border-radius: 5px;
+                outline: none;
+                font-size: 16px;
+                width: 300px;
+                margin: 0;
+            }
+  
+            .search-icon2 {
+                position: absolute;
+                top: 48%;
+                right: 15px;
+                transform: translateY(-50%);
+                font-size:18px;
+                color: #ccc;
+                pointer-events: none;
+            }
+    
+            .search-input2:focus + .search-icon2 {
+                color: #000000;
+            }
+            .search-input2:focus {
+                border: 2px solid #004878;
+            }
+    
+            .search-button {
+                display: none; /* Hide the button */
+            }
+            .smalllogo{
+                display: none;
+            }
+            .firstsection{
+                margin-top: 150px;
+            }
+            @media (max-width: 1008px) {
+                .firstsection{
+                    margin-top: 0px;
+                }
+            }
+            @media (max-width: 990px) {
+                .smalllogo{
+                    display: block;
+                }
+                .biglogo{
+                    display: none;
+                }
+            }
+            
+            /* Responsive styling */
+            @media (max-width: 768px) {
+                .toggle-button {
+                    width: 100%;
+                    padding: 1rem;
+                    font-size: 1.2rem;
+                }
+                
+                
+            
+                .navbar {
+                    flex-direction: column;
+                }
+                
+            
+                .nav-link {
+                    margin: 0.5rem 0;
+                }
+            }
+        </style>
+        
+    </head>
+    <body data-mobile-nav-style="classic">
+        <!-- start header -->
+        <header>
+            <!-- start navigation -->
+            <nav style="flex-wrap: wrap; padding: 0; margin: 0;background-color: white;" class="navbar navbar-expand-lg navbar-light  border-bottom border-color-black-transparent header-light fixed-top navbar-boxed header-reverse-scroll">
+
+
+                <!-- start navigation -->
+                
+                <div style="width: 100%; padding: 0 10px; display: flex; justify-content: space-between;align-items: center;">
+                    <div class="biglogo"  style=" width: 230px; height: auto;">
+                        <a class="navbar-brand" href="index.html" style="width: 100%;">
+                            <img src="assets/logo.png" class="default-logo" alt="" style="width: 100%;">
+                            <img src="assets/logo.png" class="alt-logo" alt="" style="width: 100%;">
+                            <img src="assets/logo.png" class="mobile-logo" alt="" style="height: 100%;">
+                        </a>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <div class="toggle-button-container">
+                            <button id="toggleContentBtn" class="toggle-button"  style="background-color: white;">
+                                <p>GuideStar at a glance</p>
+                                <img src="assets/down-arrow.png" alt="" width="16px">
+                            </button>
+                        </div>
+                        <div style="display: flex;gap: 10px;align-items: center;">
+                            <div class="search-container">
+                                <input type="text" class="search-input2" placeholder="Search...">
+                                <i class="fa fa-search search-icon2"></i>
+                                <button class="search-button">Search</button>
+                            </div>
+                            <h4 style="font-size: 14px;margin: 0;">NPO/Charity check</h4>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                
+
+
+                <div class="container-fluid nav-header-container" style="padding: 0; ">
+
+                    <!-- Expandable Content -->
+                    <div id="expandableContent" class="expandable-content hidden" style="background-color: white;">
+                        <div class="container" style="min-height: auto; max-width: 1400px;" >
+                            <div class="row">
+                                <!-- start footer column -->
+                                <div class="col-lg-1 col-sm-6 order-sm-1 order-lg-0 md-margin-40px-bottom xs-margin-25px-bottom">
+                                    <img src="./assets/logoguidestar.png" alt="" style="margin-bottom: 30px; height: 70px;">
+                                    <!-- <a href="index.html" class="footer-logo margin-25px-bottom d-inline-block"><img src="images/logo-green-black.png" data-at2x="images/logo-green-black@2x.png" alt=""></a> -->
+                                    <!-- <p class="margin-30px-bottom">GuideStar is a 501(c)(3) nonprofit organization, EIN 13-1837418. Donations are tax-deductible. </p>
+                                    <div class="social-icon-style-12">
+                                        <ul class="extra-small-icon">
+                                            <li><a class="facebook" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i class="fa-brands fa-dribbble"></i></a></li>
+                                            <li><a class="twitter" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                                            <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div> -->
+                                </div>
+                                <!-- end footer column -->
+                                <!-- start footer column -->
+                                <div class="col-lg-3  col-sm-5 order-sm-2 order-lg-0 md-margin-40px-bottom xs-margin-25px-bottom" >
+                                    <!-- <span class="alt-font font-weight-500 d-block text-extra-dark-gray margin-20px-bottom xs-margin-10px-bottom">Our Websites</span> -->
+                                    <ul>
+                                        <li><a href="" style="color: black;">Our Theory of Change and Impact</a></li>
+                                        <li><a href="" style="color: black;">Legal an FCRA Complaince</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <!-- end footer column -->
+                                <!-- start footer column -->
+                                <div class="col-lg-3 col-sm-5 offset-sm-1 offset-lg-0 order-sm-4 order-lg-0 xs-margin-25px-bottom">
+                                    <!-- <span class="alt-font font-weight-500 d-block text-extra-dark-gray margin-20px-bottom xs-margin-10px-bottom">.</span> -->
+                                    <ul>
+                                        <li><a href="" style="color: black;">Our people , Partners and Supporters</a></li>
+                                        <li><a href="" style="color: black;">Research Report</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <!-- end footer column -->
+                                <!-- start footer column -->
+                                <div class="col-lg-3 col-sm-5 offset-sm-1 offset-lg-0 order-sm-4 order-lg-0 xs-margin-25px-bottom">
+                                    <!-- <span class="alt-font font-weight-500 d-block text-extra-dark-gray margin-20px-bottom xs-margin-10px-bottom">Product & service</span> -->
+                                    <ul>
+                                        <li><a href="" style="color: black;">Join our Forum</a></li>
+                                        <li><a href="" style="color: black;">Access our Resources for NPOS</a></li>    
+                                    </ul>
+                                </div>
+                                <!-- end footer column -->
+                                <!-- start footer column -->
+                                <div class="col-lg-2 col-sm-5 offset-sm-1 offset-lg-0 order-sm-4 order-lg-0 xs-margin-25px-bottom">
+                                    <!-- <span class="alt-font font-weight-500 d-block text-extra-dark-gray margin-20px-bottom xs-margin-10px-bottom">Follow Us</span> -->
+                                    <div class="social-icon-style-12">
+                                        <ul>
+                                            <li><a href="" style="color: black;">Follow us</a></li>
+                                            <!-- <li><a href="" style="color: black;">Access our Resources for NPOS</a></li>     -->
+                                        </ul>
+                                        <ul class="extra-small-icon">
+                                            <li><a class="facebook" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i class="fa-brands fa-dribbble"></i></a></li>
+                                            <li><a class="twitter" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                                            <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- end footer column -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div style="width: 100%; padding: 0 10px; display: flex; justify-content: space-between;align-items: center;">
+                        <div class="biglogo"  style="height: 50px;">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="https://guidestarindia.org/images/GSI-logo_334x77.png" class="default-logo" alt="">
+                                <img src="https://guidestarindia.org/images/GSI-logo_334x77.png" class="alt-logo" alt="">
+                                <img src="https://guidestarindia.org/images/GSI-logo_334x77.png" class="mobile-logo" alt="">
+                            </a>
+                        </div>
+                        <div style="display: flex;gap: 10px;align-items: center;">
+                            <div class="search-container">
+                                <input type="text" class="search-input2" placeholder="Search...">
+                                <i class="fa fa-search search-icon2"></i>
+                                <button class="search-button">Search</button>
+                            </div>
+                            <h4 style="font-size: 14px;margin: 0;">NPO/Charity check</h4>
+                        </div>
+                        
+                    </div>-->
+                    <div style="width: 100%; padding: 5px; background-color: #4472C4; position: relative;">
+                        <p style="margin: 0; color: white;text-align: center;">India's most exhaustive information repository of Not-for-Profit Organization (NPOs/NGOs)</p>
+                        <div style="position: absolute;top: 5px; left: 10px; display: flex; gap: 5px;">
+                            <p style="margin: 0;padding: 0; color: white;text-align: center;font-weight: 700; font-family: sans-serif;">12,301</p>
+                            <p style="margin: 0;padding: 0; color: #ff1313;text-align: center;font-weight: 700; font-family: sans-serif; font-size: 12px;line-height: 1;">Active NPOs</p>
+                            <!-- <img src="./assets/live.png" alt="" style="height: 25px; "> -->
+                        </div>
+                    </div> 
+                    
+
+
+                    <div class="smalllogo col-auto col-sm-6 col-lg-0 me-auto ps-lg-0" style=" height: 50px;">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="https://guidestarindia.org/images/GSI-logo_334x77.png" class="default-logo" alt="">
+                            <img src="https://guidestarindia.org/images/GSI-logo_334x77.png" class="alt-logo" alt="">
+                            <img src="https://guidestarindia.org/images/GSI-logo_334x77.png" class="mobile-logo" alt="">
+                        </a>
+                    </div>
+                    <div class="col-auto col-lg-12 menu-order px-lg-0" >
+                        <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " style="justify-content: space-between; max-width: 1300px;margin-left: auto !important;" id="navbarNav">
+                            
+                            <ul class="navbar-nav alt-font" style="display: flex; justify-content: space-around;width: 100%;">
+                                <li class="nav-item dropdown megamenu">
+                                    <a style="margin: 0 10px;" href="index.html" class="nav-link text-uppercase">Home</a>
+                                    
+                                </li>
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a style="margin: 0 10px;" href="#" class="nav-link text-uppercase">Certified NPOS List</a>
+                                    
+                                </li>
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a style="margin: 0 10px;" href="#" class="nav-link text-uppercase">Update your Npo Profile</a>
+                                    
+                                </li>
+                                <li class="nav-item dropdown megamenu">
+                                    <a style="margin: 0 10px;" href="javascript:void(0);" class="nav-link text-uppercase">Solution</a>
+                                    
+                                </li>
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a style="margin: 0 10px;" href="#" class="nav-link text-uppercase">help</a>
+                                    
+                                </li>
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a style="margin: 0 10px;" href="#" class="nav-link text-uppercase">Contact us</a>
+                                    
+                                </li>
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a style="margin: 0 10px;" href="#" class="nav-link text-uppercase">Media</a>
+                                    
+                                </li>
+                                
+                            </ul>
+                            <div class="header-button d-none d-md-inline-block" style="margin-right: 10px; width: 290px;">
+                                <a href="login.html" class="btn btn-very-small btn-white btn-round-edge border-white text-white box-shadow-large" style="background-color: #4472C4;font-weight: 700;">Sign In / Create Account</a>
+                            </div>
+                            <!-- <div class="header-button d-none d-md-inline-block" style="width: 190px;">
+                                <a href="login.html" class="register-button btn btn-very-small btn-white btn-round-edge  border-white text-white box-shadow-large " style="background-color: #83B4FF;">Create Account</a>
+                            </div> -->
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+        </header>
+        <!-- end header -->
+
+
+        <!-- start section -->
+        <section class="cover-background xs-no-padding-tb xs-border-tb border-color-medium-gray" style="background-image:url('https://images.unsplash.com/photo-1683589012720-f864d44681d0?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');margin-top: 80px;">
+            <div class="container xs-no-padding-lr">
+                <div class="info-container">
+                    <ul>
+                        <li>Organization’s full address and contact information</li>
+                        <li>Up to three years of Forms 990</li>
+                        <li>Revenue and expense data for the current fiscal year</li>
+                        <li>CEO, Board Chair, and Board of Directors information</li>
+                        <li>This does not create a profile for you</li>
+                    </ul>
+                </div>
+                <div class="row justify-content-center justify-content-lg-end">
+                    <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
+                        <div class="form-container">
+                            <h1>Easily find basic information for US nonprofits</h1>
+                            <p>Register for detailed data on thousands of nonprofits. Already have an account? <a href="#">Login</a></p>
+                            <form action="/submit_registration" method="post">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="divider">
+                                    <div class="inside">
+                                        <label for="password">Password *</label>
+                                        <input type="password" id="password" name="password" required>
+                                    </div>
+                                    <div class="inside">
+                                        <label for="confirm-password">Confirm password *</label>
+                                        <input type="password" id="confirm-password" name="confirm-password" required>
+                                    </div>
+                                    
+                                </div>
+                                <div class="divider">
+                                    <div class="inside">
+                                        <label for="first-name">First name *</label>
+                                        <input type="text" id="first-name" name="first-name" required>
+                                    </div>
+                                    <div class="inside">
+                                        <label for="last-name">Last name *</label>
+                                        <input type="text" id="last-name" name="last-name" required>
+                                    </div>
+                                    
+                                </div>
+
+                                <label for="title">Title</label>
+                                <input type="text" id="title" name="title">
+                                
+                                <div class="divider">
+                                    <div class="inside">
+                                        <label for="org-name">Organization name *</label>
+                                        <input type="text" id="org-name" name="org-name" required>
+                                    </div>
+                                    <div class="inside">
+                                        <label for="org-type">Organization type *</label>
+                                        <select id="org-type" name="org-type" required>
+                                            <option value="501c3">501(c)(3) nonprofit</option>
+                                            <!-- Add other options as needed -->
+                                        </select>
+                                    </div>
+                                    
+                                </div>
+                                <div class="divider">
+                                    <div class="inside">
+                                        <label for="country">Country *</label>
+                                        <select id="country" name="country" required>
+                                            <option value="US">United States</option>
+                                            <!-- Add other options as needed -->
+                                        </select>
+                                    </div>
+                                    <div class="inside">
+                                        <label for="state">State/Province *</label>
+                                        <select id="state" name="state" required>
+                                            <option value="AL">Alabama</option>
+                                            <!-- Add other options as needed -->
+                                        </select>
+                                    </div>
+                                    
+                                </div>
+                                <div class="divider">
+                                    <div class="inside">
+                                        <label for="ein">EIN <span style="font-size: 12px;">(9 digit number with no dashes)</span></label>
+                                        <input type="text" id="ein" name="ein">
+                                    </div>
+                                    <div class="inside">
+                                        <label for="interest-area">Interest area *</label>
+                                        <select id="interest-area" name="interest-area" required>
+                                            <option value="">Select</option>
+                                            <!-- Add other options as needed -->
+                                        </select>
+                                    </div>
+                                    
+                                </div>
+
+                                
+                                <div class="checkbox-container full-width">
+                                    <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                                    <label for="agree-terms">I agree to these <a href="#">terms and conditions</a></label>
+                                </div>
+                                
+                                <div class="checkbox-container full-width">
+                                    <input type="checkbox" id="receive-updates" name="receive-updates">
+                                    <label for="receive-updates">I would like to receive periodic news and product updates</label>
+                                </div>
+                                
+                                <input type="submit" value="Register">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        
+
+        
+        
+        <!-- start footer -->
+        <!-- start footer -->
+        <footer class="footer-light footer-finance" style="background-color: #ede7e7; font-family: sans-serif;">
+            <div class="footer-top padding-six-tb lg-padding-eight-tb md-padding-50px-tb" style="padding: 40px 0;">
+                <div class="container" style="min-height: auto; max-width: 1400px;">
+                    <div class="row">
+                        <!-- start footer column -->
+                        <!-- <div class="col-lg-2 col-sm-6 order-sm-1 order-lg-0 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <h6>GuideStar India</h6>
+                            <a href="index.html" class="footer-logo margin-25px-bottom d-inline-block"><img src="images/logo-green-black.png" data-at2x="images/logo-green-black@2x.png" alt=""></a>
+                            <p class="margin-30px-bottom">Candid is a 501(c)(3) nonprofit organization, EIN 13-1837418. Donations are tax-deductible. </p>
+                            <div class="social-icon-style-12">
+                                <ul class="extra-small-icon">
+                                    <li><a class="facebook" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i class="fa-brands fa-dribbble"></i></a></li>
+                                    <li><a class="twitter" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <!-- end footer column -->
+                        <!-- start footer column -->
+                        <div class="col-xl-3 col-lg-3 col-sm-4 order-sm-3 order-lg-0 last-paragraph-no-margin">
+                            <!-- <span class="alt-font font-weight-500 d-block text-extra-dark-gray margin-20px-bottom xs-margin-10px-bottom">Subscribe to newsletter</span>
+                            <p>Enter your email address for receiving valuable newsletters.</p>
+                            <form action="email-templates/subscribe-newsletter.php" method="post">
+                                <div class="newsletter-style-03 position-relative margin-25px-bottom">
+                                    <input class="small-input border-color-medium-gray rounded m-0 required" name="email" placeholder="Enter your email address" type="email">
+                                    <input type="hidden" name="redirect" value="">
+                                    <button class="buton btn  rounded-end submit" type="submit"><i class="feather icon-feather-mail icon-extra-small m-0"></i></button>
+                                    <div class="form-results rounded d-none position-absolute"></div>
+                                </div>
+                            </form> -->
+                            <div  style="height: 50px; width: 100%;">
+                                <a class="navbar-brand" href="index.html" style="width: 100%;">
+                                    <img src="https://guidestarindia.org/images/GSI-logo_334x77.png" class="default-logo" alt="" style="width: 80%;">
+                                    
+                                </a>
+                            </div>
+                            
+                            <div class="social-icon-style-12" style="margin-top: 60px;">
+                                <ul>
+                                    <li><a href="" style="color: black; font-size: 20px; font-weight: 600;">Follow us</a></li>
+                                    <!-- <li><a href="" style="color: black;">Access our Resources for NPOS</a></li>     -->
+                                </ul>
+                                <ul class="extra-small-icon">
+                                    <li><a class="dribbble" href="http://www.dribbble.com" target="_blank" style="font-size: 20px;"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                    <li><a class="facebook" href="https://www.facebook.com" target="_blank" style="font-size: 20px;"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a class="twitter" href="http://www.twitter.com" target="_blank" style="font-size: 20px;"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a class="instagram" href="http://www.instagram.com" target="_blank" style="font-size: 20px;"><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <!-- end footer column -->
+                        <!-- start footer column -->
+                        <div class="col-lg-2  col-sm-5 order-sm-2 order-lg-0 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block text-extra-dark-gray margin-20px-bottom xs-margin-10px-bottom">ABOUT US</span>
+                            <ul>
+                                <li><a href="" class="anchor">Our Theory of Change and Impact                                </a></li>
+                                <li><a href="">Legal and FCRA Compliance                                </a></li>
+                                <li><a href="">Research Reports                                </a></li>
+                                <li><a href="">Our People, Partners and Supporters                                </a></li>
+                                
+                                
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
+                        <!-- start footer column -->
+                        <div class="col-lg-2 col-sm-5 order-sm-2 order-lg-0 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block text-extra-dark-gray margin-20px-bottom xs-margin-10px-bottom">NPO</span>
+                            <ul>
+                                <li><a href="">Register/ Update your profile                                </a></li>
+                                <li><a href="">Apply for Certification                                </a></li>
+                                <li><a href="">Access Resources for NPOs                                </a></li>
+                                <li><a href="">Join Forums                                </a></li>
+                                <li><a href="">Join Training Sessions                                </a></li>
+                                
+                                
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
+                        
+                        <!-- start footer column -->
+                        <div class="col-lg-3 col-sm-5 order-sm-2 order-lg-0 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block text-extra-dark-gray margin-20px-bottom xs-margin-10px-bottom">SOLUTIONS                            </span>
+                            <ul>
+                                <li><a href="">Register/ Update your profile                                </a></li>
+                                <li><a href="">Explore, discover, engage and support NPOs                                </a></li>
+                                <li><a href="">For Enterprises/ Platforms/ Institutions/ Government                                </a></li>
+                                <li><a href="">Connect with an NPO                                </a></li>
+                                <li><a href="">Invite/ Share                                </a></li>
+                                
+                                
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
+                        <!-- start footer column -->
+                        <div class="col-lg-2 col-sm-5 offset-lg-0 order-sm-4 order-lg-0 xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block text-extra-dark-gray margin-20px-bottom xs-margin-10px-bottom">CERTIFIED NPOs LIST                            </span>
+                            <ul>                           
+                                <li><a href="">Search</a>                                </li>
+                                <li><a href="">Help</a></li>
+                                <li><a href="">FAQs</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Media</a>                                </li>
+                                <li><a href="">blog</a>                             </li>
+                                
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+        <!-- start footer -->
+        
+        <footer class="footer-light footer-finance" style="background-color: #4472C4; font-family: sans-serif;">
+            <div class="footer-top padding-six-tb lg-padding-eight-tb md-padding-50px-tb" style="padding-top: 5px; padding-bottom: 5px;">
+                <div class="" style="min-height: auto;display: flex; flex-wrap: wrap; gap: 20px;padding: 0 40px;justify-content: center;">
+                    <!-- <div class="row"> -->
+                        <!-- start footer column -->
+                        <!-- <div class="col-lg-10 col-sm-6 order-sm-1 order-lg-0 md-margin-40px-bottom xs-margin-25px-bottom" style="color: white;">
+                            <h6 style="margin-bottom: 10px;">GuideStar India</h6>
+                            <a href="index.html" class="footer-logo margin-25px-bottom d-inline-block"><img src="images/logo-green-black.png" data-at2x="images/logo-green-black@2x.png" alt=""></a>
+                            <p class="margin-15px-bottom">GuideStar is a 501(c)(3) nonprofit organization, EIN 13-1837418. Donations are tax-deductible. </p>
+                            <div class="social-icon-style-12">
+                                <ul class="extra-small-icon">
+                                    <li><a class="facebook" href="https://www.facebook.com" target="_blank"><i style="color: white;" class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i style="color: white;" class="fa-brands fa-dribbble"></i></a></li>
+                                    <li><a class="twitter" href="http://www.twitter.com" target="_blank"><i style="color: white;" class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i style="color: white;" class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <p style="text-align: center; font-size: 14px;">&copy; Copyright 2024 <a href="index.html" class="text-decoration-line-bottom font-weight-500">GuideStar India</a></p>
+
+                        </div> -->
+                        <!-- end footer column -->
+
+                        <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">PRIVACY POLICY                        </h3>
+                        <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">TERMS OF USE                        </h3>
+                        <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">DISCLAIMER                        </h3>
+                        <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">COPYRIGHT CSIS INDIA                        </h3>
+                        <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">WORK WITH US                        </h3>
+                        <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">SEND FEEDBACK                        </h3>
+                        <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">CONTACT US                        </h3>
+                        <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">REPORT AN NPO/ NGO                        </h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer> 
+        <footer class="footer-light footer-finance">
+            <div class="footer-top padding-six-tb lg-padding-eight-tb md-padding-50px-tb" style="padding: 0;">
+                <div class="container" style="min-height: auto;flex-direction: column;">
+                    <h3 style="font-size: 13px;font-weight: 600; color: black; margin: 0; line-height: 1.5rem;text-align: center;padding-bottom: 15px;">Civil Society Information Services India is a not-for-profit organization, with PAN AABTC0541K. Donations are tax-deductible. ©2024 GuideStar India. All rights reserved.  </h3>      
+                    <h3 style="font-size: 15px;font-weight: 600; color: black; margin: 0; line-height: 2.5rem;"> </h3>      
+
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <!-- start scroll to top -->
+        <a class="scroll-top-arrow" href="javascript:void(0);"><i class="feather icon-feather-arrow-up"></i></a>
+        <!-- end scroll to top -->
+        <!-- javascript -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/theme-vendors.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script>
+            // scripts.js
+            document.addEventListener('DOMContentLoaded', function() {
+                const toggleContentBtn = document.getElementById('toggleContentBtn');
+                const expandableContent = document.getElementById('expandableContent');
+
+                toggleContentBtn.addEventListener('click', function() {
+                    if (expandableContent.classList.contains('visible')) {
+                        expandableContent.classList.remove('visible');
+                    } else {
+                        expandableContent.classList.add('visible');
+                    }
+                });
+            });
+
+        </script>
+    </body>
+</html>

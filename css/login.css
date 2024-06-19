@@ -1,0 +1,246 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.loginpage{
+    position: relative;
+    z-index: 50;
+    max-width: 1200px;
+    margin: auto;
+}
+.loginpage h1{
+    color: black;
+    font-size: 38px;
+    font-weight: 700;
+}
+.loginpage p{
+    text-align: center;
+}
+.loginpage p a{
+    color: #ed1c24;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.info-container {
+    background: rgba(255, 255, 255, 0.2); /* Glassmorphic background color */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    margin: 20px;
+    max-width: 400px;
+}
+.info-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 400px;
+}
+.info-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.info-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+.info-container ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    color: black;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    flex: 1;
+}
+.form-container h1 {
+    color: black;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 4rem;
+}
+.form-container p {
+    margin-bottom: 20px;
+}
+
+.form-container p a:hover {
+    text-decoration: underline;
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+.form-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.form-container input[type="submit"] {
+    background-color: #ed1c24;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+.form-container input[type="submit"]:hover {
+    background-color: #ed1c24;
+}
+.form-container input[type="checkbox"] {
+    margin-bottom: 10px;
+}
+
+.form-container .divider{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.form-container .inside{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.form-container .inside input{
+    border: 0px solid ;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    background-color: #f2f8ff;
+}
+@media(max-width : 1024px){
+    .info-container{
+        display: none;
+    }
+}
+@media(max-width : 700px){
+    .divider{
+        flex-direction: column;
+    }
+    .form-container .inside{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* styles.css */
+
+
+.toggle-button-container {
+    position: relative;
+    top: 0px;
+    z-index: 1200;
+    text-align: end;
+    width: 100%;
+    background-color: white;
+}
+
+.toggle-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding-right: 40px;
+}
+#toggleContentBtn{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    gap: 10px;
+}
+#toggleContentBtn p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.expandable-content {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: white;
+    padding: 0 20px; /* Adjust padding to be only horizontal */
+    border-bottom: 1px solid #ccc;
+    z-index: 9999;
+    top: 0px; /* Adjust as needed */
+    max-height: 0; /* Initially collapsed */
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    opacity: 0; /* Start with opacity 0 */
+    transition: max-height 1s ease, padding 1s ease, opacity 1s ease;
+}
+
+.expandable-content.visible {
+    max-height: 1000px; /* Use a large value to accommodate content */
+    padding: 20px; /* Restore padding */
+    opacity: 1; /* Fade in */
+}
+
+.navbar {
+    z-index: 1000; /* Ensure navbar is above other content */
+    background-color: white;
+}
+
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .toggle-button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin: 0.5rem 0;
+    }
+}
