@@ -599,7 +599,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-4 offset-lg-1 d-flex flex-column flex-md-row align-items-center sm-margin-20px-bottom wow animate__fadeIn" style="font-family: sans-serif;" data-wow-delay="0.4s">
                         <span class="w-30 h-1px bg-fast-blue margin-25px-right sm-w-90px sm-no-margin-right sm-margin-20px-bottom d-none d-md-inline-block"></span>
-                        <h2 id="counter" class="vertical-counter d-inline-flex font-weight-600 letter-spacing-minus-1px text-extra-dark-gray md-letter-spacing-normal mb-0" data-to="12301"></h2>
+                        <h2 class="countersss vertical-counter d-inline-flex font-weight-600 letter-spacing-minus-1px text-extra-dark-gray md-letter-spacing-normal mb-0" data-to="12301"></h2>
                     </div>
                     <div class="col-lg-6 col-sm-8 text-center wow animate__fadeIn" data-wow-delay="0.4s">
                         <h6 class="alt-font font-weight-500 text-extra-dark-gray text-center text-md-start d-inline-block w-90 mb-0 md-w-100">Registered Not- for profit organisations</h6>
@@ -1488,29 +1488,66 @@
         </script>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                var counter = document.getElementsByClassName('counterss');
-                var targetNumber = parseInt(counter.getAttribute('data-to'), 10);
-                var speed = parseInt(counter.getAttribute('data-speed'), 10);
+                var counters = document.querySelectorAll('.counterss');
+                
+                counters.forEach(function(counter) {
+                    var targetNumber = parseInt(counter.getAttribute('data-to'), 10);
+                    var speed = parseInt(counter.getAttribute('data-speed'), 10);
     
-                if (!isNaN(targetNumber) && !isNaN(speed)) {
-                    var startTime = null;
+                    if (!isNaN(targetNumber) && !isNaN(speed)) {
+                        var startTime = null;
     
-                    function animateCounter(currentTime) {
-                        if (!startTime) startTime = currentTime;
-                        var progress = currentTime - startTime;
-                        var currentNumber = Math.min(Math.round(progress / speed * targetNumber), targetNumber);
-                        counter.innerText = currentNumber.toLocaleString();
-                        if (currentNumber < targetNumber) {
-                            requestAnimationFrame(animateCounter);
+                        function animateCounter(currentTime) {
+                            if (!startTime) startTime = currentTime;
+                            var progress = currentTime - startTime;
+                            var currentNumber = Math.min(Math.round(progress / speed * targetNumber), targetNumber);
+                            counter.innerText = currentNumber.toLocaleString();
+                            if (currentNumber < targetNumber) {
+                                requestAnimationFrame(animateCounter);
+                            } else {
+                                // Ensure the final number is formatted correctly with commas
+                                counter.innerText = targetNumber.toLocaleString();
+                            }
                         }
-                    }
     
-                    requestAnimationFrame(animateCounter);
-                } else {
-                    console.error('The data-to or data-speed attribute is not a valid number.');
-                }
+                        requestAnimationFrame(animateCounter);
+                    } else {
+                        console.error('The data-to or data-speed attribute is not a valid number.');
+                    }
+                });
             });
     
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var counters = document.querySelectorAll('.countersss');
+                
+                counters.forEach(function(counter) {
+                    var targetNumber = parseInt(counter.getAttribute('data-to'), 10);
+                    var speed = parseInt(counter.getAttribute('data-speed'), 10) || 2000; // Default speed if not provided
+    
+                    if (!isNaN(targetNumber) && !isNaN(speed)) {
+                        var startTime = null;
+    
+                        function animateCounter(currentTime) {
+                            if (!startTime) startTime = currentTime;
+                            var progress = currentTime - startTime;
+                            var currentNumber = Math.min(Math.round(progress / speed * targetNumber), targetNumber);
+                            counter.innerText = currentNumber.toLocaleString();
+                            if (currentNumber < targetNumber) {
+                                requestAnimationFrame(animateCounter);
+                            } else {
+                                // Ensure the final number is formatted correctly with commas
+                                counter.innerText = targetNumber.toLocaleString();
+                            }
+                        }
+    
+                        requestAnimationFrame(animateCounter);
+                    } else {
+                        console.error('The data-to or data-speed attribute is not a valid number.');
+                    }
+                });
+            });
         </script>
     </body>
 </html>
