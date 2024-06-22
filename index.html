@@ -29,6 +29,15 @@
             body{
                 font-family: "Merriweather", serif;
             }
+            @media (max-width: 1008px) {
+                body {
+                    padding: 0 !important;
+                    margin: 0 !important;
+                }
+            }
+            header .navbar .navbar-brand img{
+                max-height: 100px !important;
+            }
                 
             .overlay {
                 position: absolute;
@@ -324,14 +333,14 @@
                 <div style="width: 100%; padding: 0 10px; display: flex; justify-content: space-between;align-items: center;max-width: 1250px; margin: auto;">
                     <div class="biglogo"  style=" width: auto; height: 100%;">
                         <a class="navbar-brand" href="index.html" style="height: 100%;line-height: 0; padding: 0;">
-                            <img src="assets/logo.png" class="default-logo" alt="" style="height: 100%;">
+                            <img src="assets/logo.png" class="default-logo" alt="" style="height: 50px">
                             <img src="assets/logo.png" class="alt-logo" alt="" style="height: 100%;">
                             <img src="assets/logo.png" class="mobile-logo" alt="" style="height: 100%;">
                         </a>
                     </div>
                     <div style="display: flex; flex-direction: column; margin-bottom: 10px;">
                         <div class="toggle-button-container">
-                            <button id="toggleContentBtn" class="toggle-button"  style="background-color: white;padding-right: 0;">
+                            <button id="toggleContentBtn" class="toggle-button"  style="background-color: white;padding-right: 0;padding-bottom: 10px;">
                                 <p style="color: #C00000;">GuideStar India at a glance</p>
                                 <img src="assets/down-arrow.png" alt="" width="16px">
                             </button>
