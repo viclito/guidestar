@@ -249,9 +249,19 @@
                 letter-spacing: .1px;
                 padding: 25px 0;
             }
+            .navbar.navbar-light .navbar-nav> .nav-item.dropdown.megamenu:hover > a{
+                color: #4472C4 !important;
+            }
+            .navbar.navbar-light .navbar-nav> .nav-item.dropdown.simple-dropdown:hover >a{
+                color: #4472C4 !important;
+            }
             
             .nav-link:hover {
                 text-decoration: underline;
+                color: #4472C4 !important;
+            }
+            .navbar-light .navbar-nav .nav-item.open .nav-link:hover{
+                color: #4472C4 !important;
             }
             #expandableContent a:hover , .landlink:hover{
                 color: #4472C4 !important;
@@ -262,6 +272,9 @@
             }
             .firstsection{
                 margin-top: 150px;
+            }
+            .expandable-content.visible{
+                padding: 10px 20px;
             }
             @media (max-width: 1008px) {
                 .firstsection{
@@ -311,6 +324,7 @@
             }
             .footer-finance.footer-light a:hover{
                 color: #4472C4;
+                text-decoration: underline;
             }
             .footer-finance.footer-light.alternate a{
                 color: white;
@@ -349,10 +363,10 @@
                             <img src="assets/logo.png" class="mobile-logo" alt="" style="height: 100%;">
                         </a>
                     </div>
-                    <div style="display: flex; flex-direction: column; margin-bottom: 3px;">
+                    <div style="display: flex; flex-direction: column; margin: 3px 0;">
                         <div class="toggle-button-container">
                             <button id="toggleContentBtn" class="toggle-button"  style="background-color: white;padding-right: 0;padding-bottom: 0;position: relative;right: -25px;">
-                                <p style="color: #C00000;">GuideStar India at a glance</p>
+                                <p style="color: #C00000;line-height: 1;">GuideStar India at a glance</p>
                                 <img id="toggleIcon" src="assets/down-arrow.png" alt="" width="16px">
                             </button>
                         </div>
@@ -362,7 +376,7 @@
                                 <i class="fa fa-search search-icon2"></i>
                                 <button class="search-button">Search</button>
                             </div>
-                            <a href="" style="font-size: 14px;margin: 0; color: #4472C4;font-weight: 600;font-family: sans-serif;">NPO/NGO/ Charity Check</a>
+                            <a href="" style="font-size: 14px;margin: 0; color: #4472C4;font-weight: 600;font-family: sans-serif;">NPO/ NGO/ Charity Check</a>
                         </div>
                     </div>
                     
@@ -396,8 +410,8 @@
                                 <!-- start footer column -->
                                 <div class="col-lg-3  col-sm-5 order-sm-2 order-lg-0 md-margin-40px-bottom xs-margin-25px-bottom" >
                                     <!-- <span class="alt-font font-weight-500 d-block text-extra-dark-gray margin-20px-bottom xs-margin-10px-bottom">Our Websites</span> -->
-                                    <ul>
-                                        <li style="list-style: none;"><a href="" style="color: white;">.</a></li>
+                                    <ul style="display: flex; flex-direction: column;height: 100%; justify-content: center;">
+                                        <!-- <li style="list-style: none;"><a href="" style="color: white;">.</a></li> -->
                                         <li><a href="" style="color: black;">Theory of Change and Impact</a></li>
                                         <li><a href="" style="color: black;">People, Partners and Supporters</a></li>
                                         
@@ -407,8 +421,8 @@
                                 <!-- start footer column -->
                                 <div class="col-lg-3 col-sm-5 offset-sm-1 offset-lg-0 order-sm-4 order-lg-0 xs-margin-25px-bottom">
                                     <!-- <span class="alt-font font-weight-500 d-block text-extra-dark-gray margin-20px-bottom xs-margin-10px-bottom">.</span> -->
-                                    <ul>
-                                        <li style="list-style: none;"><a href="" style="color: white;">.</a></li>
+                                    <ul style="display: flex; flex-direction: column;height: 100%; justify-content: center;">
+                                        <!-- <li style="list-style: none;"><a href="" style="color: white;">.</a></li> -->
                                         <li><a href="" style="color: black;">How to Discover/ Support NPOs</a></li>
                                         <li><a href="" style="color: black;">How to Enhance Credibility of your NPO</a></li>
                                         
@@ -418,8 +432,8 @@
                                 <!-- start footer column -->
                                 <div class="col-lg-3 col-sm-5 offset-sm-1 offset-lg-0 order-sm-4 order-lg-0 xs-margin-25px-bottom">
                                     <!-- <span class="alt-font font-weight-500 d-block text-extra-dark-gray margin-20px-bottom xs-margin-10px-bottom">Product & service</span> -->
-                                    <ul>
-                                        <li style="list-style: none;"><a href="" style="color: white;">.</a></li>
+                                    <ul style="display: flex; flex-direction: column;height: 100%; justify-content: center;">
+                                        <!-- <li style="list-style: none;"><a href="" style="color: white;">.</a></li> -->
                                         <li><a href="" style="color: black;">Research Reports & Insights</a></li>
                                         <li><a href="" style="color: black;">Statutory and FCRA Compliance</a></li>    
                                     </ul>
@@ -553,7 +567,7 @@
                 <div class="content">
                     <div class="container position-relative">
                         <div class="row">
-                            <div class="col-lg-8 col-md-9 col-sm-11 d-flex flex-column justify-content-center wow animate__fadeIn" style="height: 500px;">
+                            <div class="col-lg-8 col-md-9 col-sm-11 d-flex flex-column justify-content-center wow animate__fadeIn" style="min-height: 400px; margin-bottom: 50px;">
                                 <!-- <span class="text-extra-medium alt-font font-weight-500 text-uppercase text-olivine-green d-block margin-35px-bottom xs-margin-15px-bottom">Financial planning</span> -->
                                 <h2 class="alt-font font-weight-700 text-dark-charcoal margin-2-half-rem-bottom letter-spacing-minus-2px sm-margin-20px-bottom xs-margin-15px-bottom" style="color: black; font-size: 3.2rem;">
                                     Look up Not-for-Profit Organisations <br>
@@ -586,275 +600,9 @@
         </section>
         <!-- end hero section -->
 
-        <!-- start section -->
-        <section class="big-section wow animate__fadeIn bg-light-gray" style="padding: 70px 0;">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-12 text-center text-lg-start md-margin-6-rem-bottom wow animate__fadeIn">
-                        <h5 class="alt-font text-center text-dark-charcoal font-weight-700 letter-spacing-minus-1px " style="margin-bottom: 60px;">
-                            Give with confidence to NPOs with our Trust & Transparency Seals
-                        </h5>
-                    </div>
-                </div>
-                <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 justify-content-center">
-                    <!-- start pie chart item -->
-                    <div class="col text-center md-margin-45px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
-                        <div class="chart-percent d-inline-block margin-40px-bottom xs-margin-20px-bottom">
-                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
-                                <img src="assets/platinum.png" alt="" style="height: 160px;width: auto; " />
-                            <!-- </span> -->
-                        </div>
-                        <div class="last-paragraph-no-margin wow animate__fadeIn" data-wow-duration="0.2">
-                            <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-5px-bottom" style="font-size: 16px;">
-                                Platinum
-                            </span>
-                            <p class="" style="font-size: 16px;font-family:sans-serif;font-weight: 500;text-align: justify;">Based on GuideStar India’s seven pillar assessment rubric covering Situation Analysis, Theory of Change, Programme Intervention & Resilience, Infrastructure, Finance & Compliance, Governance & Accountability, Evidence of Impact, Learning & Reflection</p>
-                        </div>
-                    </div>
-                    <!-- end pie chart item -->
-                    <!-- start pie chart item -->
-                    <div class="col text-center md-margin-45px-bottom wow animate__fadeIn" data-wow-delay="0.4s">
-                        <div class="chart-percent d-inline-block margin-40px-bottom xs-margin-20px-bottom">
-                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
-                                <img src="assets/gold.png" alt="" style="height: 160px;width: auto; " />
-                            <!-- </span> -->
-                        </div>
-                        <div class="last-paragraph-no-margin">
-                            <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-5px-bottom" style="font-size: 16px;">
-                                Gold
-                            </span>
-                            <p class="" style="font-size: 16px;font-family:sans-serif;font-weight: 500;text-align: justify;">Based on GuideStar India’s seven pillar assessment rubric covering Situation Analysis, Theory of Change, Programme Intervention & Resilience, Infrastructure, Finance & Compliance, Governance & Accountability, Evidence of Impact, Learning & Reflection</p>
-                        </div>
-                    </div>
-                    <!-- end pie chart item -->
-                    <!-- start pie chart item -->
-                    <div class="col text-center wow animate__fadeIn" data-wow-delay="0.4s">
-                        <div class="chart-percent d-inline-block margin-40px-bottom xs-margin-20px-bottom">
-                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
-                                <img src="assets/silver.png" alt="" style="height: 160px;width: auto; " />
-                            <!-- </span> -->
-                        </div>
-                        <div class="last-paragraph-no-margin">
-                            <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-5px-bottom" style="font-size: 16px;">
-                                Silver
-                            </span>
-                            <p class="" style="font-size: 16px;font-family:sans-serif;font-weight: 500;text-align: justify;">Based on GuideStar India’s seven pillar assessment rubric covering Situation Analysis, Theory of Change, Programme Intervention & Resilience, Infrastructure, Finance & Compliance, Governance & Accountability, Evidence of Impact, Learning & Reflection</p>
-                        </div>
-                    </div>
-                    <!-- end pie chart item -->
-                    <!-- start pie chart item -->
-                    <div class="col text-center wow animate__fadeIn" data-wow-delay="0.4s">
-                        <div class="chart-percent d-inline-block margin-40px-bottom xs-margin-20px-bottom">
-                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
-                                <img src="assets/bronze.png" alt="" style="height: 160px;width: auto; " />
-                            <!-- </span> -->
-                        </div>
-                        <div class="last-paragraph-no-margin">
-                            <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-5px-bottom" style="font-size: 16px;">
-                                Bronze
-                            </span>
-                            <p class="" style="font-size: 16px;font-family:sans-serif;font-weight: 500;text-align: justify;">Based on GuideStar India’s seven pillar assessment rubric covering Situation Analysis, Theory of Change, Programme Intervention & Resilience, Infrastructure, Finance & Compliance, Governance & Accountability, Evidence of Impact, Learning & Reflection</p>
-                        </div>
-                    </div>
-                    <!-- end pie chart item -->
-                </div>
-            </div>
-        </section>
-        <!-- end section -->
+        
 
         <!-- start section -->
-        <section class="big-section " style="padding: 70px 0;">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-12 text-center text-lg-start md-margin-6-rem-bottom wow animate__fadeIn">
-                        
-                        <h5 class="alt-font text-center text-dark-charcoal font-weight-700 letter-spacing-minus-1px " style="margin-bottom: 60px;">
-                            Get involved using India’s most exhaustive repository of NPOs
-                        </h5>
-                    </div>
-                </div>
-                <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-md-3">
-
-                    <!-- start counter item -->
-                    <div class="col counter-style-01 last-paragraph-no-margin">
-                        <div class="chart-percent d-flex justify-content-center margin-20px-bottom xs-margin-20px-bottom" >
-                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
-                                <img src="assets/count1.png" alt="" style="height: 80px;width: auto; " />
-                            <!-- </span> -->
-                        </div>
-                        <div class="last-paragraph-no-margin" style="padding: 10px;">
-                            <div style="display: flex;justify-content: center;">
-                                <h5 class="counter counterss counter-number text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-1px margin-15px-bottom" data-to="500" data-speed="5000"></h5>
-                            </div>
-                            <!-- <span class="alt-font font-weight-500 text-extra-dark-gray d-block margin-5px-bottom">
-                                <ul style="list-style: decimal;">
-                                    <li>Support organisations with donations and engage in other ways</li>
-                                    <li>Based on GuideStar India’s due diligence</li>
-                                    <li>Donate money</li>
-                                    <li>Support with talent</li>
-                                    <li>Engage</li>
-                                    <li>Volunteer</li>
-                                    <li>Donate in-kind</li>
-                                    <li>Celebrate</li>
-                                </ul>
-                            </span> -->
-                            <div class="row justify-content-center">
-                                <div class="col-xl-12 col-lg-12 col-md-12">
-                                    <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-10px-bottom" style="font-size: 16px;">
-                                        Support NPOs vetted for advanced levels
-                                    </span>
-                                    <ul class="list-style-02 alt-font font-weight-500 text-extra-dark-gray">
-                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
-                                            Donate money
-                                        </li>
-                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
-                                            Volunteer
-                                        </li>
-                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
-                                            Gift in-kind
-                                        </li>
-                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
-                                            Purchase products
-                                        </li>
-                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
-                                            Celebrate occasions
-                                        </li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- <p class="w-85 md-w-100">Lorem ipsum is simply dummy text the printing typesetting</p> -->
-                        </div>
-                    </div>
-                    <!-- end counter item -->
-
-                    <!-- start counter item -->
-                    <div class="col counter-style-01 last-paragraph-no-margin md-margin-30px-bottom">
-                        <div class="chart-percent d-flex justify-content-center margin-20px-bottom xs-margin-20px-bottom">
-                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
-                                <img src="assets/count2.png" alt="" style="height: 80px;width: auto; " />
-                            <!-- </span> -->
-                        </div>
-                        <div class="last-paragraph-no-margin" style="padding: 10px;">
-                            <div style="display: flex;justify-content: center;">
-                                <h5  class="counter counterss counter-number text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-1px margin-15px-bottom" data-to="7000" data-speed="5000"></h5>
-                            </div>
-                            <!-- <span class="alt-font font-weight-500 text-extra-dark-gray d-block margin-5px-bottom">
-                                <ul style="list-style: decimal;">
-                                    <li>Engage, Volunteer, Donate in-kind, Celebrate with organisations</li>
-                                    <li>Verified government registrations</li>
-                                    <li>Engage</li>
-                                    <li>Volunteer</li>
-                                    <li>Donate in-kind</li>
-                                    <li>Celebrate</li>
-                                </ul>
-                                
-                            </span> -->
-                            <div class="row justify-content-center">
-                                <div class="col-xl-12 col-lg-12 col-md-12">
-                                    <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-10px-bottom" style="font-size: 16px;">
-                                        Engage with NPOs verified for basic level 
-                                    </span>
-                                    <ul class="list-style-02 alt-font font-weight-500 text-extra-dark-gray">
-                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
-                                            Volunteer
-                                        </li>
-                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
-                                            Gift in-kind
-                                        </li>
-                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
-                                            Purchase products
-                                        </li>
-                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
-                                            Celebrate occasions
-                                        </li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- <p class="w-85 md-w-100">Lorem ipsum is simply dummy text the printing typesetting</p> -->
-                        </div>
-                    </div>
-                    <!-- end counter item -->
-
-                    <!-- start counter item -->
-                    <div class="col counter-style-01 last-paragraph-no-margin md-margin-30px-bottom">
-                        <div class="chart-percent d-flex justify-content-center margin-20px-bottom xs-margin-20px-bottom">
-                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
-                                <img src="assets/count3.png" alt="" style="height: 80px;width: auto; " />
-                            <!-- </span> -->
-                        </div>
-                        <div class="last-paragraph-no-margin" style="padding: 10px;">
-                            <div style="display: flex;justify-content: center;">
-                                <h5 class="counter counterss counter-number text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-1px margin-15px-bottom" data-to="12000" data-speed="5000"></h5>
-                            </div>
-                            <!-- <span class="alt-font font-weight-500 text-extra-dark-gray d-block margin-5px-bottom">
-                                <ul style="list-style: decimal;">
-                                    <li>Discover and Learn More about organisations based on your preference of theme, location, size</li>
-                                    <li>Verified for non-profit status</li>
-                                </ul>
-                            </span> -->
-                            <div class="row justify-content-center">
-                                <div class="col-xl-12 col-lg-12 col-md-12">
-                                    <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-10px-bottom" style="font-size: 16px;">
-                                        Discover NPOs verified for entry level
-                                    </span>
-                                    <ul class="list-style-02 alt-font font-weight-500 text-extra-dark-gray">
-                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
-                                            Gift in-kind
-                                        </li>
-                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
-                                            Purchase products
-                                        </li>
-                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
-                                            Celebrate occasions
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- <p class="w-85 md-w-100">Lorem ipsum is simply dummy text the printing typesetting</p> -->
-                        </div>
-                    </div>
-                    <!-- end counter item -->
-                    
-                    <!-- start counter item -->
-                    <div class="col counter-style-01 last-paragraph-no-margin">
-                        <div class="chart-percent d-flex justify-content-center margin-20px-bottom xs-margin-20px-bottom">
-                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
-                                <img src="assets/count4.png" alt="" style="height: 80px;width: auto; " />
-                            <!-- </span> -->
-                        </div>
-                        <div class="last-paragraph-no-margin" style="padding: 10px;">
-                            <div style="display: flex;justify-content: center;">
-                                <h5 class="counter counterss counter-number text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-1px margin-15px-bottom" data-to="200000" data-speed="5000"></h5>
-                            </div>
-                            <!-- <span class="alt-font font-weight-500 text-extra-dark-gray d-block margin-5px-bottom">
-                                <ul style="list-style: decimal;">
-                                    <li>Explore organisations for your research and outreach using our reports and dashboards</li>
-                                </ul>
-                            </span> -->
-                            <div class="row justify-content-center">
-                                <div class="col-xl-12 col-lg-12 col-md-12">
-                                    <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-10px-bottom " style="font-size: 16px;">
-                                        Explore NPOs for your research and outreach 
-                                    </span>
-                                    <!-- <ul class="list-style-02 alt-font font-weight-500 text-extra-dark-gray">
-                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
-                                            Explore NPOs for your research and outreach 
-                                        </li>
-                                    </ul> -->
-                                </div>
-                            </div>
-                            <!-- <p class="w-85 md-w-100">Lorem ipsum is simply dummy text the printing typesetting</p> -->
-                        </div>
-                    </div>
-                    <!-- end counter item -->
-                </div>
-            </div>
-        </section>
-        <!-- end section -->
-
-         <!-- start section -->
          <section class=" wow animate__fadeIn bg-light-gray" style="padding: 70px 0;">
             <div class="container">
                 
@@ -910,7 +658,7 @@
                             <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-5px-bottom" style="font-size: 16px;">
                                 SEARCH BY CAUSE
                             </span>
-                            <p class="" style="font-size: 16px;font-family:sans-serif;font-weight: 500;text-align: center;">i.	Find NPOs for every cause and community you care about</p>
+                            <p class="" style="font-size: 16px;font-family:sans-serif;font-weight: 500;text-align: center;">Find NPOs for every cause and community you care about</p>
                         </a>
                     </div>
                     <!-- end process step item -->
@@ -926,7 +674,7 @@
                             <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-5px-bottom" style="font-size: 16px;">
                                 SEARCH BY FINANCIALS
                             </span>
-                            <p class="" style="font-size: 16px;font-family:sans-serif;font-weight: 500;text-align: center;">i.	Explore NPOs based on their size, tax benefits, and FCRA eligibility</p>
+                            <p class="" style="font-size: 16px;font-family:sans-serif;font-weight: 500;text-align: center;">Explore NPOs based on their size, tax benefits, and FCRA eligibility</p>
                         </a>
                     </div>
                     <!-- end process step item -->
@@ -940,6 +688,292 @@
             </div>
         </section>
         <!-- end section -->
+
+        <!-- start section -->
+        <section class="big-section wow animate__fadeIn bg-light-gray" style="padding: 70px 0;">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-12 text-center text-lg-start md-margin-6-rem-bottom wow animate__fadeIn">
+                        <h5 class="alt-font text-center text-dark-charcoal font-weight-700 letter-spacing-minus-1px " >
+                            Give with confidence to NPOs with our Trust & Transparency Seals
+                        </h5>
+                        <p style="text-align: center;margin-bottom: 60px!important;width: 70%;margin: auto;">Based on GuideStar India’s seven pillar assessment rubric covering Situation Analysis, Theory of Change, Programme Intervention & Resilience, Infrastructure, Finance & Compliance, Governance & Accountability, Evidence of Impact, Learning & Reflection</p>
+                    </div>
+                </div>
+                <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 justify-content-center">
+                    <!-- start pie chart item -->
+                    <div class="col text-center md-margin-45px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
+                        <div class="chart-percent d-inline-block margin-40px-bottom xs-margin-20px-bottom">
+                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
+                                <img src="assets/platinum.png" alt="" style="height: 160px;width: auto; " />
+                            <!-- </span> -->
+                        </div>
+                        <div class="last-paragraph-no-margin wow animate__fadeIn" data-wow-duration="0.2">
+                            <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-5px-bottom" style="font-size: 16px; color: #a3bcc7;">
+                                Platinum
+                            </span>
+                            <p class="" style="font-size: 16px;font-family:sans-serif;font-weight: 500;text-align: justify;">Based on GuideStar India’s seven pillar assessment rubric covering Situation Analysis, Theory of Change, Programme Intervention & Resilience, Infrastructure, Finance & Compliance, Governance & Accountability, Evidence of Impact, Learning & Reflection</p>
+                        </div>
+                    </div>
+                    <!-- end pie chart item -->
+                    <!-- start pie chart item -->
+                    <div class="col text-center md-margin-45px-bottom wow animate__fadeIn" data-wow-delay="0.4s">
+                        <div class="chart-percent d-inline-block margin-40px-bottom xs-margin-20px-bottom">
+                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
+                                <img src="assets/gold.png" alt="" style="height: 160px;width: auto; " />
+                            <!-- </span> -->
+                        </div>
+                        <div class="last-paragraph-no-margin">
+                            <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-5px-bottom" style="font-size: 16px; color: #ffcc28;">
+                                Gold
+                            </span>
+                            <p class="" style="font-size: 16px;font-family:sans-serif;font-weight: 500;text-align: justify;">Based on GuideStar India’s seven pillar assessment rubric covering Situation Analysis, Theory of Change, Programme Intervention & Resilience, Infrastructure, Finance & Compliance, Governance & Accountability, Evidence of Impact, Learning & Reflection</p>
+                        </div>
+                    </div>
+                    <!-- end pie chart item -->
+                    <!-- start pie chart item -->
+                    <div class="col text-center wow animate__fadeIn" data-wow-delay="0.4s">
+                        <div class="chart-percent d-inline-block margin-40px-bottom xs-margin-20px-bottom">
+                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
+                                <img src="assets/silver.png" alt="" style="height: 160px;width: auto; " />
+                            <!-- </span> -->
+                        </div>
+                        <div class="last-paragraph-no-margin">
+                            <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-5px-bottom" style="font-size: 16px; color: #94a0a8;">
+                                Silver
+                            </span>
+                            <p class="" style="font-size: 16px;font-family:sans-serif;font-weight: 500;text-align: justify;">Based on GuideStar India’s seven pillar assessment rubric covering Situation Analysis, Theory of Change, Programme Intervention & Resilience, Infrastructure, Finance & Compliance, Governance & Accountability, Evidence of Impact, Learning & Reflection</p>
+                        </div>
+                    </div>
+                    <!-- end pie chart item -->
+                    <!-- start pie chart item -->
+                    <div class="col text-center wow animate__fadeIn" data-wow-delay="0.4s">
+                        <div class="chart-percent d-inline-block margin-40px-bottom xs-margin-20px-bottom">
+                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
+                                <img src="assets/bronze.png" alt="" style="height: 160px;width: auto; " />
+                            <!-- </span> -->
+                        </div>
+                        <div class="last-paragraph-no-margin">
+                            <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-5px-bottom" style="font-size: 16px; color: #a05822;">
+                                Bronze
+                            </span>
+                            <p class="" style="font-size: 16px;font-family:sans-serif;font-weight: 500;text-align: justify;">Based on GuideStar India’s seven pillar assessment rubric covering Situation Analysis, Theory of Change, Programme Intervention & Resilience, Infrastructure, Finance & Compliance, Governance & Accountability, Evidence of Impact, Learning & Reflection</p>
+                        </div>
+                    </div>
+                    <!-- end pie chart item -->
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+
+        <!-- start section -->
+        <section class="big-section " style="padding: 70px 0;">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-12 text-center text-lg-start md-margin-6-rem-bottom wow animate__fadeIn">
+                        
+                        <h5 class="alt-font text-center text-dark-charcoal font-weight-700 letter-spacing-minus-1px " style="margin-bottom: 60px;">
+                            Get involved with NPOs to make a difference
+                        </h5>
+                    </div>
+                </div>
+                <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-md-3" >
+
+                    <!-- start counter item -->
+                    <div class="col counter-style-01 last-paragraph-no-margin" style="box-shadow: 0 0 5px rgba(0, 0, 0, .08);padding: 20px 10px;">
+                        <div class="chart-percent d-flex justify-content-center margin-20px-bottom xs-margin-20px-bottom" >
+                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
+                                <img src="assets/count1.png" alt="" style="height: 60px;width: auto; " />
+                            <!-- </span> -->
+                        </div>
+                        <div class="last-paragraph-no-margin" style="padding: 10px;">
+                            <div style="display: flex;justify-content: center;">
+                                <h5 class="counter counterss counter-number text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-1px margin-15px-bottom" data-to="500" data-speed="7000"></h5>
+                            </div>
+                            <!-- <span class="alt-font font-weight-500 text-extra-dark-gray d-block margin-5px-bottom">
+                                <ul style="list-style: decimal;">
+                                    <li>Support organisations with donations and engage in other ways</li>
+                                    <li>Based on GuideStar India’s due diligence</li>
+                                    <li>Donate money</li>
+                                    <li>Support with talent</li>
+                                    <li>Engage</li>
+                                    <li>Volunteer</li>
+                                    <li>Donate in-kind</li>
+                                    <li>Celebrate</li>
+                                </ul>
+                            </span> -->
+                            <div class="row justify-content-center">
+                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-10px-bottom" style="font-size: 16px;">
+                                        Support NPOs vetted for advanced level
+                                    </span>
+                                    <!-- <ul class="list-style-02 alt-font font-weight-500 text-extra-dark-gray">
+                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
+                                            Donate money
+                                        </li>
+                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
+                                            Volunteer
+                                        </li>
+                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
+                                            Gift in-kind
+                                        </li>
+                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
+                                            Purchase products
+                                        </li>
+                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
+                                            Celebrate occasions
+                                        </li>
+                                        
+                                    </ul> -->
+                                    <div class="btn" style="display: flex; justify-content: center;width: 100%; margin-top: 10px;">
+                                        <button style="border: none; outline: none; background-color: #C00000; color: white; border-radius: 4px; padding: 5px 8px;font-weight: 600;">Support</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- <p class="w-85 md-w-100">Lorem ipsum is simply dummy text the printing typesetting</p> -->
+                        </div>
+                    </div>
+                    <!-- end counter item -->
+
+                    <!-- start counter item -->
+                    <div class="col counter-style-01 last-paragraph-no-margin md-margin-30px-bottom" style="box-shadow: 0 0 5px rgba(0, 0, 0, .08);padding: 20px 10px;">
+                        <div class="chart-percent d-flex justify-content-center margin-20px-bottom xs-margin-20px-bottom">
+                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
+                                <img src="assets/count2.png" alt="" style="height: 60px;width: auto; " />
+                            <!-- </span> -->
+                        </div>
+                        <div class="last-paragraph-no-margin" style="padding: 10px;">
+                            <div style="display: flex;justify-content: center;">
+                                <h5  class="counter counterss counter-number text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-1px margin-15px-bottom" data-to="7000" data-speed="7000"></h5>
+                            </div>
+                            <!-- <span class="alt-font font-weight-500 text-extra-dark-gray d-block margin-5px-bottom">
+                                <ul style="list-style: decimal;">
+                                    <li>Engage, Volunteer, Donate in-kind, Celebrate with organisations</li>
+                                    <li>Verified government registrations</li>
+                                    <li>Engage</li>
+                                    <li>Volunteer</li>
+                                    <li>Donate in-kind</li>
+                                    <li>Celebrate</li>
+                                </ul>
+                                
+                            </span> -->
+                            <div class="row justify-content-center" >
+                                <div class="col-xl-12 col-lg-12 col-md-12" >
+                                    <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-10px-bottom" style="font-size: 16px;">
+                                        Engage with NPOs verified for basic level 
+                                    </span>
+                                    <!-- <ul class="list-style-02 alt-font font-weight-500 text-extra-dark-gray">
+                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
+                                            Volunteer
+                                        </li>
+                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
+                                            Gift in-kind
+                                        </li>
+                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
+                                            Purchase products
+                                        </li>
+                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
+                                            Celebrate occasions
+                                        </li>
+                                        
+                                    </ul> -->
+                                    <div class="btn" style="display: flex; justify-content: center;width: 100%;margin-top: 10px;">
+                                        <button style="border: none; outline: none; background-color: #C00000; color: white; border-radius: 4px; padding: 5px 8px;font-weight: 600;">Engage</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <p class="w-85 md-w-100">Lorem ipsum is simply dummy text the printing typesetting</p> -->
+                        </div>
+                    </div>
+                    <!-- end counter item -->
+
+                    <!-- start counter item -->
+                    <div class="col counter-style-01 last-paragraph-no-margin md-margin-30px-bottom" style="box-shadow: 0 0 5px rgba(0, 0, 0, .08);padding: 20px 10px;">
+                        <div class="chart-percent d-flex justify-content-center margin-20px-bottom xs-margin-20px-bottom">
+                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
+                                <img src="assets/count3.png" alt="" style="height: 60px;width: auto; " />
+                            <!-- </span> -->
+                        </div>
+                        <div class="last-paragraph-no-margin" style="padding: 10px;">
+                            <div style="display: flex;justify-content: center;">
+                                <h5 class="counter counterss counter-number text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-1px margin-15px-bottom" data-to="12000" data-speed="7000"></h5>
+                            </div>
+                            <!-- <span class="alt-font font-weight-500 text-extra-dark-gray d-block margin-5px-bottom">
+                                <ul style="list-style: decimal;">
+                                    <li>Discover and Learn More about organisations based on your preference of theme, location, size</li>
+                                    <li>Verified for non-profit status</li>
+                                </ul>
+                            </span> -->
+                            <div class="row justify-content-center">
+                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-10px-bottom" style="font-size: 16px;">
+                                        Discover NPOs verified for entry level
+                                    </span>
+                                    <!-- <ul class="list-style-02 alt-font font-weight-500 text-extra-dark-gray">
+                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
+                                            Gift in-kind
+                                        </li>
+                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
+                                            Purchase products
+                                        </li>
+                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
+                                            Celebrate occasions
+                                        </li>
+                                    </ul> -->
+                                    <div class="btn" style="display: flex; justify-content: center;width: 100%;margin-top: 10px;">
+                                        <button style="border: none; outline: none; background-color: #C00000; color: white; border-radius: 4px; padding: 5px 8px;font-weight: 600;">Discover</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <p class="w-85 md-w-100">Lorem ipsum is simply dummy text the printing typesetting</p> -->
+                        </div>
+                    </div>
+                    <!-- end counter item -->
+                    
+                    <!-- start counter item -->
+                    <div class="col counter-style-01 last-paragraph-no-margin" style="box-shadow: 0 0 5px rgba(0, 0, 0, .08);padding: 20px 10px;">
+                        <div class="chart-percent d-flex justify-content-center margin-20px-bottom xs-margin-20px-bottom">
+                            <!-- <span class="pie-chart-style-02" data-line-width="8" data-percent="0" data-track-color="#f7f7f7" data-start-color="#C00000" data-end-color="#5d6ff9"> -->
+                                <img src="assets/count4.png" alt="" style="height: 60px;width: auto; " />
+                            <!-- </span> -->
+                        </div>
+                        <div class="last-paragraph-no-margin" style="padding: 10px;">
+                            <div style="display: flex;justify-content: center;">
+                                <h5 class="counter counterss counter-number text-extra-dark-gray alt-font appear font-weight-600 letter-spacing-minus-1px margin-15px-bottom" data-to="200000" data-speed="7000"></h5>
+                            </div>
+                            <!-- <span class="alt-font font-weight-500 text-extra-dark-gray d-block margin-5px-bottom">
+                                <ul style="list-style: decimal;">
+                                    <li>Explore organisations for your research and outreach using our reports and dashboards</li>
+                                </ul>
+                            </span> -->
+                            <div class="row justify-content-center">
+                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <span class="alt-font font-weight-600 text-dark-charcoal text-uppercase d-block margin-10px-bottom " style="font-size: 16px;">
+                                        Explore NPOs for your research and outreach 
+                                    </span>
+                                    <ul class="list-style-02 alt-font font-weight-500 text-extra-dark-gray">
+                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
+                                            NPO Outreach
+                                        </li>
+                                        <li class="padding-15px-bottom border-bottom border-color-medium-gray"><i class="feather icon-feather-check text-large icon-gradient margin-10px-right"></i>
+                                            NPO Research
+                                        </li>
+                                    </ul>
+                                    <div class="btn" style="display: flex; justify-content: center;width: 100%;margin-top: 10px;">
+                                        <button style="border: none; outline: none; background-color: #C00000; color: white; border-radius: 4px; padding: 5px 8px;font-weight: 600;">Explore</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <p class="w-85 md-w-100">Lorem ipsum is simply dummy text the printing typesetting</p> -->
+                        </div>
+                    </div>
+                    <!-- end counter item -->
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        
 
         <!-- start section -->
         <section class=" overflow-visible wow animate__fadeIn" style="padding: 70px 0;">
@@ -1164,8 +1198,9 @@
                                 <a href="#" style="height: 100%;display: flex; align-items: center; justify-content: center;flex-direction: column;">
                                     <img src="./assets/platinum.png" alt="" style="max-height: 70%; width: auto;" />
                                 </a>
-                                <p style="margin: 0;font-size: 15px;font-weight: 600;color: #d1d8de;">Platinum</p>
+                                <a href="#" style="margin: 0;font-size: 15px;font-weight: 600;color: #a3bcc7;">Platinum</a>
                             </div>
+                            <p style="margin: 0;font-size: 13px;font-weight: 600;text-align: center;">Certification level  </p>
                         </div>
                         <div class="swiper-slide">
                             <div class="client-box" style=" height: 60px; border: none;display: flex;flex-direction: column;">
@@ -1173,8 +1208,9 @@
                                     <img src="./assets/platinum.png" alt="" style="max-height: 70%; width: auto;" />
                                     
                                 </a>
-                                <p style="margin: 0;font-size: 15px;font-weight: 600;color: #d1d8de;">Platinum</p>
+                                <a href="#" style="margin: 0;font-size: 15px;font-weight: 600;color: #a3bcc7;">Platinum</a>
                             </div>
+                            <p style="margin: 0;font-size: 13px;font-weight: 600;text-align: center;">Certification level  </p>
                         </div>
                         <div class="swiper-slide">
                             <div class="client-box" style=" height: 60px; border: none;display: flex;flex-direction: column;">
@@ -1182,8 +1218,9 @@
                                     <img src="./assets/gold.png" alt="" style="max-height: 70%; width: auto;" />
                                     
                                 </a>
-                                <p style="margin: 0;font-size: 15px;font-weight: 600;color: #fecf27;">Gold</p>
+                                <a href="#" style="margin: 0;font-size: 15px;font-weight: 600;color: #ffcc28;">Gold</a>
                             </div>
+                            <p style="margin: 0;font-size: 13px;font-weight: 600;text-align: center;">Certification level  </p>
                         </div>
                         <div class="swiper-slide">
                             <div class="client-box" style=" height: 60px; border: none;display: flex;flex-direction: column;">
@@ -1191,8 +1228,9 @@
                                     <img src="./assets/silver.png" alt="" style="max-height: 70%; width: auto;" />
                                     
                                 </a>
-                                <p style="margin: 0;font-size: 15px;font-weight: 600;color: #d1d8de;">Silver</p>
+                                <a href="#" style="margin: 0;font-size: 15px;font-weight: 600;color: #94a0a8;">Silver</a>
                             </div>
+                            <p style="margin: 0;font-size: 13px;font-weight: 600;text-align: center;">Certification level  </p>
                         </div>
                         <div class="swiper-slide">
                             <div class="client-box" style=" height: 60px; border: none;display: flex;flex-direction: column;">
@@ -1200,8 +1238,9 @@
                                     <img src="./assets/bronze.png" alt="" style="max-height: 70%; width: auto;" />
                                     
                                 </a>
-                                <p style="margin: 0;font-size: 15px;font-weight: 600;color: #eb8638;">Bronze</p>
+                                <a href="#" style="margin: 0;font-size: 15px;font-weight: 600;color: #a05822;">Bronze</a>
                             </div>
+                            <p style="margin: 0;font-size: 13px;font-weight: 600;text-align: center;">Certification level  </p>
                         </div>
                         <div class="swiper-slide">
                             <div class="client-box" style=" height: 60px; border: none;display: flex;flex-direction: column;">
@@ -1209,8 +1248,9 @@
                                     <img src="./assets/bronze.png" alt="" style="max-height: 70%; width: auto;" />
                                     
                                 </a>
-                                <p style="margin: 0;font-size: 15px;font-weight: 600;color: #eb8638;">Bronze</p>
+                                <a href="#" style="margin: 0;font-size: 15px;font-weight: 600;color: #a05822;">Bronze</a>
                             </div>
+                            <p style="margin: 0;font-size: 13px;font-weight: 600;text-align: center;">Certification level  </p>
                         </div>
                         
                         
@@ -1352,10 +1392,10 @@
                         </div> 
                         <div class="bg-white box-shadow-small padding-1-half-rem-all">
                             <!-- <span class="text-extra-dark-gray alt-font d-block font-weight-500 margin-10px-bottom">Professional liability</span> -->
-                            <p style="margin-bottom: 10px;font-weight: 700;">NGOs name</p>
+                            <p style="margin-bottom: 10px;font-weight: 700;">NPO Name</p>
                             <p style="margin-bottom: 10px;">Samerth Talim Kendra (STK) was initiated in 2007, as a response to demand by communities of Juhapura, Sarkhej and Vejalpur for a centre for intellectually challenged children.</p>
                             <div class="h-1px bg-medium-light-gray margin-25px-bottom w-100"></div>
-                            <a class="text-small text-extra-dark-gray font-weight-500 text-uppercase alt-font d-flex" style="justify-content: space-between;" href="what-we-offers.html"><div>Name</div><div style="display: flex;align-items: center;gap: 5px;">Read More<i class="ti-arrow-right float-end"></i></div></a>
+                            <a class="text-small text-extra-dark-gray font-weight-500 text-uppercase alt-font d-flex" style="justify-content: space-between;" href="what-we-offers.html"><div></div><div style="display: flex;align-items: center;gap: 5px;">Read More<i class="ti-arrow-right float-end"></i></div></a>
                         </div>
                     </div>
                     <!-- end services item -->
@@ -1366,10 +1406,10 @@
                         </div> 
                         <div class="bg-white box-shadow-small padding-1-half-rem-all">
                             <!-- <span class="text-extra-dark-gray alt-font d-block font-weight-500 margin-10px-bottom">Dedicated to our clients</span> -->
-                            <p style="margin-bottom: 10px;font-weight: 700;">NGOs name</p>
+                            <p style="margin-bottom: 10px;font-weight: 700;">NPO Name</p>
                             <p style="margin-bottom: 10px;">ETASHA’s program is designed to assist underprivileged youth who have completed schooling and are being trained  to become employable in growth sectors of the economy. </p>
                             <div class="h-1px bg-medium-light-gray margin-25px-bottom w-100" ></div>
-                            <a class="text-small text-extra-dark-gray font-weight-500 text-uppercase alt-font d-flex" style="justify-content: space-between;" href="what-we-offers.html"><div>Name</div><div style="display: flex;align-items: center;gap: 5px;">Read More<i class="ti-arrow-right float-end"></i></div></a>
+                            <a class="text-small text-extra-dark-gray font-weight-500 text-uppercase alt-font d-flex" style="justify-content: space-between;" href="what-we-offers.html"><div></div><div style="display: flex;align-items: center;gap: 5px;">Read More<i class="ti-arrow-right float-end"></i></div></a>
                         </div>
                     </div>
                     <!-- end services item -->
@@ -1380,10 +1420,10 @@
                         </div> 
                         <div class="bg-white box-shadow-small padding-1-half-rem-all">
                             <!-- <span class="text-extra-dark-gray alt-font d-block font-weight-500 margin-10px-bottom">Outstanding services</span> -->
-                            <p style="margin-bottom: 10px;font-weight: 700;">NGOs name</p>
+                            <p style="margin-bottom: 10px;font-weight: 700;">NPO Name</p>
                             <p style="margin-bottom: 10px;">Thane CPCA conducted programs inviting students from kindergarten to sensitise them towards their approach to animals and how to take care of them. <br><span style="color: white;">.</span> </p>
                             <div class="h-1px bg-medium-light-gray margin-25px-bottom w-100"></div>
-                            <a class="text-small text-extra-dark-gray font-weight-500 text-uppercase alt-font d-flex" style="justify-content: space-between;" href="what-we-offers.html"><div>Name</div><div style="display: flex;align-items: center;gap: 5px;">Read More<i class="ti-arrow-right float-end"></i></div></a>
+                            <a class="text-small text-extra-dark-gray font-weight-500 text-uppercase alt-font d-flex" style="justify-content: space-between;" href="what-we-offers.html"><div></div><div style="display: flex;align-items: center;gap: 5px;">Read More<i class="ti-arrow-right float-end"></i></div></a>
                         </div>
                     </div>
                     <!-- end services item -->
@@ -1404,44 +1444,50 @@
                 <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center" style="max-width: 1150px; margin: auto;">
                     <!-- start services item -->
                     <div class="col md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn">
-                        <div style="background-color: #ede7e7;height: 260px ; width: 100%;display: flex; align-items: center;justify-content: center;">
-                            <img src="/assets/stories1.jpg" alt="" style="width: auto;">
-                        </div> 
-                        <div class="bg-white box-shadow-small padding-1-half-rem-all">
-                            <!-- <span class="text-extra-dark-gray alt-font d-block font-weight-500 margin-10px-bottom">Professional liability</span> -->
-                            <p style="margin-bottom: 10px;font-weight: 700;">Samerth Charitable Trust</p>
-                            <p style="margin-bottom: 10px;">Samerth Talim Kendra (STK) was initiated in 2007, as a response to demand by communities of Juhapura, Sarkhej and Vejalpur for a centre for intellectually challenged children.</p>
-                            <div class="h-1px bg-medium-light-gray margin-25px-bottom w-100"></div>
-                            <a class="text-small text-extra-dark-gray font-weight-500 text-uppercase alt-font d-flex" style="justify-content: space-between;" href="what-we-offers.html"><div>Name</div><div style="display: flex;align-items: center;gap: 5px;">Read More<i class="ti-arrow-right float-end"></i></div></a>
-                        </div>
+                        <a href="">
+                            <div style="background-color: #ede7e7;height: 260px ; width: 100%;display: flex; align-items: center;justify-content: center;">
+                                <img src="/assets/stories1.jpg" alt="" style="width: auto;">
+                            </div> 
+                            <div class="bg-white box-shadow-small padding-1-half-rem-all">
+                                <!-- <span class="text-extra-dark-gray alt-font d-block font-weight-500 margin-10px-bottom">Professional liability</span> -->
+                                <p style="margin-bottom: 10px;font-weight: 700;">Samerth Charitable Trust</p>
+                                <p style="margin-bottom: 10px;">Samerth Talim Kendra (STK) was initiated in 2007, as a response to demand by communities of Juhapura, Sarkhej and Vejalpur for a centre for intellectually challenged children.</p>
+                                <div class="h-1px bg-medium-light-gray margin-25px-bottom w-100"></div>
+                                <a class="text-small text-extra-dark-gray font-weight-500 text-uppercase alt-font d-flex" style="justify-content: space-between;" href="what-we-offers.html"><div></div><div style="display: flex;align-items: center;gap: 5px;">Read More<i class="ti-arrow-right float-end"></i></div></a>
+                            </div>
+                        </a>
                     </div>
                     <!-- end services item -->
                     <!-- start services item -->
                     <div class="col md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
-                        <div style="background-color: #ede7e7;height: 260px ; width: 100%;display: flex; align-items: center;justify-content: center;">
-                            <img src="/assets/stories2.jpg" alt="" style="background-size: auto;">
-                        </div> 
-                        <div class="bg-white box-shadow-small padding-1-half-rem-all">
-                            <!-- <span class="text-extra-dark-gray alt-font d-block font-weight-500 margin-10px-bottom">Dedicated to our clients</span> -->
-                            <p style="margin-bottom: 10px;font-weight: 700;">Etasha</p>
-                            <p style="margin-bottom: 10px;">ETASHA’s program is designed to assist underprivileged youth who have completed schooling and are being trained  to become employable in growth sectors of the economy. </p>
-                            <div class="h-1px bg-medium-light-gray margin-25px-bottom w-100" ></div>
-                            <a class="text-small text-extra-dark-gray font-weight-500 text-uppercase alt-font d-flex" style="justify-content: space-between;" href="what-we-offers.html"><div>Name</div><div style="display: flex;align-items: center;gap: 5px;">Read More<i class="ti-arrow-right float-end"></i></div></a>
-                        </div>
+                        <a href="">
+                            <div style="background-color: #ede7e7;height: 260px ; width: 100%;display: flex; align-items: center;justify-content: center;">
+                                <img src="/assets/stories2.jpg" alt="" style="background-size: auto;">
+                            </div> 
+                            <div class="bg-white box-shadow-small padding-1-half-rem-all">
+                                <!-- <span class="text-extra-dark-gray alt-font d-block font-weight-500 margin-10px-bottom">Dedicated to our clients</span> -->
+                                <p style="margin-bottom: 10px;font-weight: 700;">Etasha</p>
+                                <p style="margin-bottom: 10px;">ETASHA’s program is designed to assist underprivileged youth who have completed schooling and are being trained  to become employable in growth sectors of the economy. </p>
+                                <div class="h-1px bg-medium-light-gray margin-25px-bottom w-100" ></div>
+                                <a class="text-small text-extra-dark-gray font-weight-500 text-uppercase alt-font d-flex" style="justify-content: space-between;" href="what-we-offers.html"><div></div><div style="display: flex;align-items: center;gap: 5px;">Read More<i class="ti-arrow-right float-end"></i></div></a>
+                            </div>
+                        </a>
                     </div>
                     <!-- end services item -->
                     <!-- start services item -->
                     <div class="col wow animate__fadeIn" data-wow-delay="0.4s">
-                        <div style="background-color: #ede7e7;height: 260px ; width: 100%;display: flex; align-items: center;justify-content: center;">
-                            <img src="/assets/stories3.jpg" alt="" style="background-size: cover;">
-                        </div> 
-                        <div class="bg-white box-shadow-small padding-1-half-rem-all">
-                            <!-- <span class="text-extra-dark-gray alt-font d-block font-weight-500 margin-10px-bottom">Outstanding services</span> -->
-                            <p style="margin-bottom: 10px;font-weight: 700;">Thane CPCA</p>
-                            <p style="margin-bottom: 10px;">Thane CPCA conducted programs inviting students from kindergarten to sensitise them towards their approach to animals and how to take care of them. <br><span style="color: white;">.</span> </p>
-                            <div class="h-1px bg-medium-light-gray margin-25px-bottom w-100"></div>
-                            <a class="text-small text-extra-dark-gray font-weight-500 text-uppercase alt-font d-flex" style="justify-content: space-between;" href="what-we-offers.html"><div>Name</div><div style="display: flex;align-items: center;gap: 5px;">Read More<i class="ti-arrow-right float-end"></i></div></a>
-                        </div>
+                        <a href="">
+                            <div style="background-color: #ede7e7;height: 260px ; width: 100%;display: flex; align-items: center;justify-content: center;">
+                                <img src="/assets/stories3.jpg" alt="" style="background-size: cover;">
+                            </div> 
+                            <div class="bg-white box-shadow-small padding-1-half-rem-all">
+                                <!-- <span class="text-extra-dark-gray alt-font d-block font-weight-500 margin-10px-bottom">Outstanding services</span> -->
+                                <p style="margin-bottom: 10px;font-weight: 700;">Thane CPCA</p>
+                                <p style="margin-bottom: 10px;">Thane CPCA conducted programs inviting students from kindergarten to sensitise them towards their approach to animals and how to take care of them. <br><span style="color: white;">.</span> </p>
+                                <div class="h-1px bg-medium-light-gray margin-25px-bottom w-100"></div>
+                                <a class="text-small text-extra-dark-gray font-weight-500 text-uppercase alt-font d-flex" style="justify-content: space-between;" href="what-we-offers.html"><div></div><div style="display: flex;align-items: center;gap: 5px;">Read More<i class="ti-arrow-right float-end"></i></div></a>
+                            </div>
+                        </a>
                     </div>
                     <!-- end services item -->
                 </div>
@@ -1784,7 +1830,7 @@
 
                         <!-- start footer column -->
                         <div class="col-lg-3  col-sm-5 order-sm-2 order-lg-0 md-margin-40px-bottom xs-margin-25px-bottom">
-                            <span class="alt-font font-weight-500 d-block text-extra-dark-gray margin-20px-bottom xs-margin-10px-bottom">ABOUT US</span>
+                            <span class="alt-font font-weight-500 d-block text-extra-dark-gray margin-20px-bottom xs-margin-10px-bottom">About Us</span>
                             <ul>
                                 <li><a href="" class="anchor">Theory of Change and Impact </a></li>
                                 <li><a href="">People, Partners and Supporters</a></li>
@@ -1849,6 +1895,7 @@
                         <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">CONTACT US                     </h3>
                         <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">SEND FEEDBACK                        </h3>
                         <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">REPORT AN NPO/ NGO                        </h3>
+                        <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">Support GuideStar India</h3>
                         
                     </div>
                 </div>
