@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
         <meta name="description" content="Litho is a clean and modern design, BootStrap 5 responsive, business and portfolio multipurpose HTML5 template with 39+ ready homepage demos.">
         <!-- favicon icon -->
-        <link rel="shortcut icon" href="assets/favicon.ico">
+        <link rel="shortcut icon" href="assets/favicon2.ico">
         <!-- <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"> -->
@@ -208,21 +208,18 @@
                 position: relative;
                 width: 100%;
                 background: white;
-                padding: 0 20px; /* Adjust padding to be only horizontal */
-                border-bottom: 1px solid #ccc;
+                border-top: 1px solid #ccc;
                 z-index: 9999;
                 top: 0px; /* Adjust as needed */
                 max-height: 0; /* Initially collapsed */
-                transition: max-height 0.5s ease, padding 0.5s ease;
                 opacity: 0; /* Start with opacity 0 */
-                transition: max-height 0.5s ease, padding 0.5s ease, opacity 0.5s ease;
+                transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+                will-change: max-height, opacity;
             }
             
             .expandable-content.visible {
                 max-height: 1000px; /* Use a large value to accommodate content */
-                padding: 20px; /* Restore padding */
                 opacity: 1; /* Fade in */
-                padding-bottom: 0;
             }
             
             .navbar {
@@ -386,11 +383,11 @@
                 
 
 
-                <div class="container-fluid nav-header-container" style="padding: 0;border-top: 1px solid #ccc; ">
+                <div class="container-fluid nav-header-container" style="padding: 0; ">
 
                     <!-- Expandable Content -->
                     <div id="expandableContent" class="expandable-content hidden" style="background-color: white;">
-                        <div class="container" style="min-height: auto; max-width: 1250px;" >
+                        <div class="container" style="min-height: auto; max-width: 1250px;padding: 10px 20px;" >
                             <div class="row">
                                 <!-- start footer column -->
                                 <div class="col-lg-1 col-sm-6 order-sm-1 order-lg-0 md-margin-40px-bottom xs-margin-25px-bottom d-flex align-items-center" >
@@ -591,7 +588,8 @@
                                 
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-11 md-h-650px sm-h-450px d-flex flex-column wow animate__fadeIn" >
-                                <img src="./assets/Frame_2-removebg-preview.png" alt="" style="width: 100%;height:auto;margin-top: 100px;">  
+                                <!-- <img src="./assets/Frame_2-removebg-preview.png" alt="" style="width: 100%;height:auto;margin-top: 100px;">   -->
+                                <img src="./assets/Untitled design.png" alt="" style="width: 100%;height:auto;margin-top: 50px;">  
                             </div>
                         </div>
                         <!-- <div class="down-section text-center z-index-1 xs-bottom-30px d-none d-sm-inline-block"><a href="#about" class="section-link"><i class="fa-solid fa-arrow-down text-dark-charcoal bg-white box-shadow-extra-large w-45px h-45px line-height-46px border-radius-100"></i></a></div> -->
@@ -1894,9 +1892,7 @@
                         <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">WORK WITH US                        </h3>
                         <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">CONTACT US                     </h3>
                         <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">SEND FEEDBACK                        </h3>
-                        <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">REPORT AN NPO/ NGO                        </h3>
-                        <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">Support GuideStar India</h3>
-                        
+                        <h3 style="font-size: 15px;font-weight: 600; color: white; margin: 0;line-height: 2.4rem;">REPORT AN NPO/ NGO                        </h3>                        
                     </div>
                 </div>
             </div>
